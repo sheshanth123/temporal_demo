@@ -6,6 +6,7 @@ A small Python client for eBay's OAuth and Browse APIs.
 
 - Python 3.11 or newer
 - `uv`
+- Temporal CLI (for the local Temporal server and Web UI)
 - eBay API client ID and client secret
 
 ## Setup
@@ -18,6 +19,26 @@ uv sync
 
 The project uses a `src` layout and the virtual environment is created in `.venv`.
 
+## Start Temporal
+
+The eBay client only prints the Temporal Web UI address; it does not start Temporal itself. Install the [Temporal CLI](https://docs.temporal.io/cli) and run this in a separate terminal:
+
+```powershell
+temporal server start-dev
+```
+
+Keep that terminal running. The Temporal Web UI will then be available at:
+
+```text
+http://localhost:8233
+```
+
+If you use Docker instead, start Docker Desktop first and run:
+
+```powershell
+docker run --rm -p 7233:7233 -p 8233:8233 temporalio/auto-setup:latest
+```
+
 ## Environment
 
 Create or update `.env` in the project root:
@@ -26,6 +47,7 @@ Create or update `.env` in the project root:
 EBAY_CLIENT_ID=your-client-id
 EBAY_CLIENT_SECRET=your-client-secret
 EBAY_BASE_URL=https://api.sandbox.ebay.com
+TEMPORAL_UI_URL=http://localhost:8233
 ```
 
 Keep `.env` private. It is excluded from Git.
@@ -44,7 +66,7 @@ Alternatively, use the virtual environment directly:
 .\.venv\Scripts\python.exe -m ebay_client.main
 ```
 
-The application obtains an OAuth application token, searches for diamond listings, and prints details for the first result.
+The application prints the Temporal UI URL, obtains an OAuth application token, searches for diamond listings, and prints details for the first result. It then keeps the session open until you click **Terminate session** in the eBay Client window.
 
 ## SSL certificate issues
 
