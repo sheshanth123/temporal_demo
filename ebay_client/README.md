@@ -1,6 +1,6 @@
 # eBay Client
 
-A small Python client for eBay's OAuth and Browse APIs.
+A Temporal-powered eBay Browse API pipeline.
 
 ## Requirements
 
@@ -52,21 +52,23 @@ TEMPORAL_UI_URL=http://localhost:8233
 
 Keep `.env` private. It is excluded from Git.
 
-## Run
+## Run the pipelines
 
-Run the application with:
-
-```powershell
-uv run ebay-client
-```
-
-Alternatively, use the virtual environment directly:
+Start the worker in one terminal:
 
 ```powershell
-.\.venv\Scripts\python.exe -m ebay_client.main
+uv run ebay-worker
 ```
 
-The application prints the Temporal UI URL, obtains an OAuth application token, searches for diamond listings, and prints details for the first result. It then keeps the session open until you click **Terminate session** in the eBay Client window.
+Then trigger the workflows in a second terminal:
+
+```powershell
+temporal server start-dev
+```
+
+```powershell
+uv run ebay-run
+```
 
 ## SSL certificate issues
 
@@ -80,7 +82,7 @@ For temporary troubleshooting only, disable verification for one PowerShell sess
 
 ```powershell
 $env:EBAY_VERIFY_SSL = "false"
-uv run ebay-client
+uv run ebay-run
 ```
 
 Do not use disabled SSL verification in production.

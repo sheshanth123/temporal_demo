@@ -9,11 +9,13 @@ authors = [
 requires-python = ">=3.11"
 dependencies = [
     "python-dotenv>=1.2.3",
-    "requests>=2.34.2",
+    "httpx>=0.27.0",
+    "temporalio>=1.18.0",
 ]
 
 [project.scripts]
-ebay-client = "ebay_client:main"
+ebay-worker = "ebay_client.worker:run_worker"
+ebay-run = "ebay_client.run:run_pipeline"
 
 [build-system]
 requires = ["uv_build>=0.12.10,<0.13.0"]
