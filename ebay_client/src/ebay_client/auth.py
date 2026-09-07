@@ -1,6 +1,12 @@
 import base64
 import requests
-from ebay_client.config import EBAY_BASE_URL, EBAY_CLIENT_ID, EBAY_CLIENT_SECRET
+from ebay_client.config import (
+    EBAY_BASE_URL,
+    EBAY_CA_BUNDLE,
+    EBAY_CLIENT_ID,
+    EBAY_CLIENT_SECRET,
+    EBAY_VERIFY_SSL,
+)
 
 
 def get_application_token() -> str:
@@ -18,6 +24,12 @@ def get_application_token() -> str:
         "scope": "https://api.ebay.com/oauth/api_scope",
     }
 
-    response = requests.post(auth_url, headers=headers, data=data)
+    response = requests.post(
+        auth_url,
+        headers=headers,
+        data=data,
+        timeout=30,
+        verify=EBAY_CA_BUNDLE or EBAY_VERIFY_SSL,
+    )
     response.raise_for_status()
     return response.json()["access_token"]
