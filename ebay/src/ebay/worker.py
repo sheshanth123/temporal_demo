@@ -5,7 +5,7 @@ import asyncio
 from temporalio.client import Client
 from temporalio.worker import Worker
 
-from ebay_client import activities, config, workflows
+from ebay import activities, config, workflows
 
 
 async def _main() -> None:

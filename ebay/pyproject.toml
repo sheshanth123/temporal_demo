@@ -1,5 +1,5 @@
 [project]
-name = "ebay-client"
+name = "ebay"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -14,8 +14,8 @@ dependencies = [
 ]
 
 [project.scripts]
-ebay-worker = "ebay_client.worker:run_worker"
-ebay-run = "ebay_client.run:run_pipeline"
+ebay-worker = "ebay.worker:run_worker"
+ebay-run = "ebay.run:run_pipeline"
 
 [build-system]
 requires = ["uv_build>=0.12.10,<0.13.0"]

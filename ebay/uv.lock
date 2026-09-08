@@ -25,7 +25,7 @@ wheels = [
 ]
 
 [[package]]
-name = "ebay-client"
+name = "ebay"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [

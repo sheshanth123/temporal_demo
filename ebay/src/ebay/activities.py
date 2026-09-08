@@ -8,7 +8,7 @@ from typing import Any
 import httpx
 from temporalio import activity
 
-from ebay_client.config import EBAY_BASE_URL, EBAY_CA_BUNDLE, EBAY_CLIENT_ID, EBAY_CLIENT_SECRET, EBAY_VERIFY_SSL
+from ebay.config import EBAY_BASE_URL, EBAY_CA_BUNDLE, EBAY_CLIENT_ID, EBAY_CLIENT_SECRET, EBAY_VERIFY_SSL
 
 VERIFY_SSL = EBAY_CA_BUNDLE or EBAY_VERIFY_SSL
 

@@ -6,7 +6,7 @@ from temporalio import workflow
 from temporalio.common import RetryPolicy
 
 with workflow.unsafe.imports_passed_through():
-    from ebay_client.activities import append_items_to_file_activity, fetch_item_details_activity, fetch_oauth_token_activity, read_lines_from_file_activity, save_item_json_activity, search_ebay_activity
+    from ebay.activities import append_items_to_file_activity, fetch_item_details_activity, fetch_oauth_token_activity, read_lines_from_file_activity, save_item_json_activity, search_ebay_activity
 
 RETRY_POLICY = RetryPolicy(initial_interval=timedelta(seconds=2), backoff_coefficient=2.0, maximum_interval=timedelta(seconds=30), maximum_attempts=4)
 

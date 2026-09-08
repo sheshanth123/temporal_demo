@@ -5,7 +5,7 @@ from pathlib import Path
 
 from temporalio.client import Client
 
-from ebay_client import config, workflows
+from ebay import config, workflows
 
 
 async def _main() -> None:
