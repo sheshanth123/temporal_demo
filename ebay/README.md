@@ -56,7 +56,7 @@ If eBay rate limits or temporarily fails, Temporal automatically pauses and retr
 - **Python 3.11+**
 - [**uv**](https://docs.astral.sh/uv/) (fast Python package and project manager)
 - [**Temporal CLI**](https://docs.temporal.io/cli) (or Docker Desktop)
-- **eBay Developer Account**: An App ID (Client ID) and Cert ID (Client Secret) from the [eBay Developer Portal](https://developer.ebay.com/).
+- **eBay Developer Account**: Client ID (`App ID`) and Client Secret (`Cert ID`) from the [eBay Developer Portal](https://developer.ebay.com/).
 
 ---
 
@@ -74,20 +74,25 @@ This creates the `.venv` virtual environment and installs all dependencies (`tem
 ---
 
 ### Step 2: Configure Environment Variables
-Create a `.env` file in the project root directory (or edit the existing one):
+Create or update `.env` in the project root:
 
 ```env
+# eBay API Credentials
 EBAY_CLIENT_ID=your-ebay-app-client-id
 EBAY_CLIENT_SECRET=your-ebay-cert-client-secret
 EBAY_BASE_URL=https://api.sandbox.ebay.com
+
+# Target Marketplace and Locale
+EBAY_MARKETPLACE_ID=EBAY_US
+EBAY_ACCEPT_LANGUAGE=en-US
+# Optional contextual location:
+# EBAY_ENDUSER_CTX=contextualLocation=country=US,zip=94043
+
+# Temporal Server Configuration
 TEMPORAL_HOST=localhost:7233
 TEMPORAL_UI_URL=http://localhost:8233
 TASK_QUEUE=ebay-processing-queue
 ```
-
-> [!NOTE]
-> - By default, `EBAY_BASE_URL` uses `https://api.sandbox.ebay.com`. If you have production keys, change it to `https://api.ebay.com`.
-> - Never commit your `.env` file to source control.
 
 ---
 
@@ -105,7 +110,7 @@ docker run --rm -p 7233:7233 -p 8233:8233 temporalio/auto-setup:latest
 
 Once running:
 - **Temporal Server Address**: `localhost:7233`
-- **Temporal Web UI**: [http://localhost:8233](http://localhost:8233) (Open this in your browser to inspect workflows in real time!)
+- **Temporal Web UI**: [http://localhost:8233](http://localhost:8233)
 
 Keep this terminal running.
 
@@ -136,37 +141,45 @@ uv run ebay-run
 #### What happens during execution:
 1. `ebay-run` writes default search keywords (`mechanical keyboard`, `gaming mouse`) to `search_queries.txt`.
 2. Triggers `EbaySearchPipelineWorkflow` (`id: ebay-search-run-001`).
-   - The worker executes the activities, searches eBay, and creates `item_ids.txt`.
-   - Output summary printed to the console:
-     ```text
-     Search Result: {'status': 'completed', 'queries_processed': 2, 'new_items_saved': 6, 'target_file': '...\\item_ids.txt'}
-     ```
+   - Searches eBay for each keyword in the specified marketplace and appends unique item IDs to `item_ids.txt`.
 3. Triggers `EbayItemEnrichmentWorkflow` (`id: ebay-enrich-run-001`).
-   - The worker reads `item_ids.txt`, queries eBay item endpoints, and saves each item's payload to `ebay_item_jsons/<item_id>.json`.
-   - Output summary printed to the console:
-     ```text
-     Enrichment Result: {'status': 'completed', 'items_processed': 6, 'output_dir': '...\\ebay_item_jsons'}
-     ```
+   - Fetches full details for each item ID and saves individual JSON files to `./ebay_item_jsons/<item_id>.json`.
 
 ---
 
 ### Step 6: Monitor & Inspect in Temporal Web UI
 1. Visit [http://localhost:8233](http://localhost:8233).
 2. Click on namespace `default`.
-3. You will see both workflow runs:
-   - `ebay-search-run-001`
-   - `ebay-enrich-run-001`
-4. Click on any workflow run to inspect:
-   - Visual timeline and execution graph.
-   - Input arguments and return values.
-   - Activity execution attempts, inputs, outputs, and any retry/error stacks.
+3. View the execution graph, payload inputs/outputs, activity timing, and retries.
 
 ---
 
-## Customizing Queries and Inputs
+## Supported Marketplace IDs (`EBAY_MARKETPLACE_ID`)
 
-- **Custom Search Terms**: Modify or populate `search_queries.txt` with one search query per line before running.
-- **Custom Workflow IDs**: If you run `uv run ebay-run` multiple times, note that Temporal workflow IDs must be unique for concurrent runs or configured with specific reuse policies. In `src/ebay/run.py`, you can change or parameterize the IDs (e.g., appending a timestamp).
+You can set `EBAY_MARKETPLACE_ID` in `.env` to search and fetch from any official eBay marketplace:
+
+| Marketplace Code | Country / Site | Default Locale (`EBAY_ACCEPT_LANGUAGE`) |
+| :--- | :--- | :--- |
+| **`EBAY_US`** | United States (Default) | `en-US` |
+| **`EBAY_GB`** | United Kingdom | `en-GB` |
+| **`EBAY_DE`** | Germany | `de-DE` |
+| **`EBAY_AU`** | Australia | `en-AU` |
+| **`EBAY_CA`** | Canada | `en-CA` (or `fr-CA`) |
+| **`EBAY_FR`** | France | `fr-FR` |
+| **`EBAY_IT`** | Italy | `it-IT` |
+| **`EBAY_ES`** | Spain | `es-ES` |
+| **`EBAY_AT`** | Austria | `de-AT` |
+| **`EBAY_BE`** | Belgium | `nl-BE` (or `fr-BE`) |
+| **`EBAY_CH`** | Switzerland | `de-CH` (or `fr-CH`, `it-CH`) |
+| **`EBAY_IE`** | Ireland | `en-IE` |
+| **`EBAY_IN`** | India | `en-IN` |
+| **`EBAY_HK`** | Hong Kong | `zh-HK` |
+| **`EBAY_MY`** | Malaysia | `en-MY` (or `ms-MY`) |
+| **`EBAY_PH`** | Philippines | `en-PH` |
+| **`EBAY_SG`** | Singapore | `en-SG` |
+| **`EBAY_PL`** | Poland | `pl-PL` |
+| **`EBAY_NL`** | Netherlands | `nl-NL` |
+| **`EBAY_MOTORS_US`** | eBay Motors (US) | `en-US` |
 
 ---
 
@@ -180,7 +193,7 @@ EBAY_CA_BUNDLE=C:\path\to\company-ca.pem
 ```
 
 ### Disabling SSL Verification (Development / Debugging Only)
-For temporary local testing behind restrictive firewalls, you can temporarily disable verification:
+For temporary local testing behind restrictive firewalls:
 
 ```powershell
 $env:EBAY_VERIFY_SSL = "false"

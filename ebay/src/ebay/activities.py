@@ -8,9 +8,32 @@ from typing import Any
 import httpx
 from temporalio import activity
 
-from ebay.config import EBAY_BASE_URL, EBAY_CA_BUNDLE, EBAY_CLIENT_ID, EBAY_CLIENT_SECRET, EBAY_VERIFY_SSL
+from ebay.config import (
+    EBAY_ACCEPT_LANGUAGE,
+    EBAY_BASE_URL,
+    EBAY_CA_BUNDLE,
+    EBAY_CLIENT_ID,
+    EBAY_CLIENT_SECRET,
+    EBAY_ENDUSER_CTX,
+    EBAY_MARKETPLACE_ID,
+    EBAY_VERIFY_SSL,
+)
 
 VERIFY_SSL = EBAY_CA_BUNDLE or EBAY_VERIFY_SSL
+
+
+def get_browse_headers(token: str, marketplace_id: str | None = None) -> dict[str, str]:
+    headers = {
+        "Authorization": f"Bearer {token}",
+        "X-EBAY-C-MARKETPLACE-ID": marketplace_id or EBAY_MARKETPLACE_ID,
+        "Accept": "application/json",
+    }
+    if EBAY_ACCEPT_LANGUAGE:
+        headers["Accept-Language"] = EBAY_ACCEPT_LANGUAGE
+    if EBAY_ENDUSER_CTX:
+        headers["X-EBAY-C-ENDUSERCTX"] = EBAY_ENDUSER_CTX
+    return headers
+
 
 
 @activity.defn
@@ -37,11 +60,12 @@ async def read_lines_from_file_activity(file_path: str) -> list[str]:
 
 @activity.defn
 async def search_ebay_activity(params: dict[str, Any]) -> list[str]:
+    headers = get_browse_headers(params["token"], params.get("marketplace_id"))
     async with httpx.AsyncClient(timeout=30.0, verify=VERIFY_SSL) as client:
         response = await client.get(
-        f"{EBAY_BASE_URL}/buy/browse/v1/item_summary/search",
-        headers={"Authorization": f"Bearer {params['token']}", "X-EBAY-C-MARKETPLACE-ID": "EBAY_US", "Accept": "application/json"},
-        params={"q": params["query"], "limit": params.get("limit", 3)},
+            f"{EBAY_BASE_URL}/buy/browse/v1/item_summary/search",
+            headers=headers,
+            params={"q": params["query"], "limit": params.get("limit", 3)},
         )
     response.raise_for_status()
     return [item["itemId"] for item in response.json().get("itemSummaries", []) if "itemId" in item]
@@ -60,13 +84,15 @@ async def append_items_to_file_activity(params: dict[str, Any]) -> int:
 
 @activity.defn
 async def fetch_item_details_activity(params: dict[str, Any]) -> dict[str, Any]:
+    headers = get_browse_headers(params["token"], params.get("marketplace_id"))
     async with httpx.AsyncClient(timeout=30.0, verify=VERIFY_SSL) as client:
         response = await client.get(
-        f"{EBAY_BASE_URL}/buy/browse/v1/item/{params['item_id']}",
-        headers={"Authorization": f"Bearer {params['token']}", "X-EBAY-C-MARKETPLACE-ID": "EBAY_US", "Accept": "application/json"},
+            f"{EBAY_BASE_URL}/buy/browse/v1/item/{params['item_id']}",
+            headers=headers,
         )
     response.raise_for_status()
     return response.json()
+
 
 
 @activity.defn

@@ -1,0 +1,700 @@
+{
+  "additionalImages": [
+    {
+      "imageUrl": "https://test.ebuyl.com/api/v1/files/products/2026/08/14/3bdc9af97f3e8c4a3e6435b8edc75517.jpg"
+    }
+  ],
+  "adultOnly": false,
+  "brand": "TIGERWINGS",
+  "buyingOptions": [
+    "FIXED_PRICE"
+  ],
+  "categoryId": "23895",
+  "categoryIdPath": "58058|31530|23895",
+  "categoryPath": "Computers/Tablets & Networking|Laptop & Desktop Accessories|Mouse Pads & Wrist Rests",
+  "color": "Black",
+  "condition": "New",
+  "conditionId": "1000",
+  "description": "<style>\n:root { font-family: Arial, Helvetica, sans-serif; color: #222; line-height: 1.5 }\nh1 { font-size: 1.6em }\nh2 { font-size: 1.3em; border-bottom: 2px solid #eee; padding-bottom: 0.2em }\nimg { height: auto }\nli { margin-bottom: 0.4em }\ntable { border-collapse: collapse; width: 100% }\nth, td { border: 1px solid #ddd; padding: 8px 12px; text-align: left; vertical-align: top }\nth { background-color: #f5f5f5 }\n.hero { margin-bottom: 1em }\n</style>\n<h1>Non-slip Wear-resistant Mouse Pad, Universal for Office &amp; Gaming, Precision Pad</h1><div class=\"hero\"><img src=\"https://test.ebuyl.com/api/v1/files/products/2026/08/14/3bdc9af97f3e8c4a3e6435b8edc75517.jpg\" alt=\"TIGERWINGS non-slip mouse pad on desk\" style=\"max-width:100%;height:auto\"></div><h2>Core Selling Points</h2><p>This TIGERWINGS mouse pad combines a durable, wear-resistant surface with a non-slip rubber base, providing reliable tracking and stability for both office work and gaming. Its universal size and neutral design fit any desk setup, while the precision surface supports smooth cursor control for everyday tasks and fast-paced gameplay alike.</p><h2>Key Features</h2><ul><li><p><strong>Non-slip rubber base:</strong> The natural rubber underside grips the desk firmly, preventing unwanted movement during intense gaming sessions or busy workdays.</p></li><li><p><strong>Wear-resistant surface:</strong> The textured cloth top is built to withstand heavy daily use, resisting fraying and maintaining a consistent glide over time.</p></li><li><p><strong>Precision tracking:</strong> The optimized surface works with optical and laser mice, delivering accurate cursor movement for detailed design work or competitive play.</p></li><li><p></p></li></ul><div class=\"section-img\"><img src=\"https://test.ebuyl.com/api/v1/files/products/2026/08/28/e138eb942c43767ab27c07c0b08a216b.jpg\" alt=\"Mouse pad with mouse on top showing surface texture\" style=\"max-width:100%;height:auto\"></div><h2>Product Specifications</h2><table style=\"min-width: 50px;\"><colgroup><col style=\"min-width: 25px;\"><col style=\"min-width: 25px;\"></colgroup><tbody><tr><th colspan=\"1\" rowspan=\"1\"><p>Attribute</p></th><th colspan=\"1\" rowspan=\"1\"><p>Value</p></th></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>Brand</p></td><td colspan=\"1\" rowspan=\"1\"><p>TIGERWINGS</p></td></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>Type</p></td><td colspan=\"1\" rowspan=\"1\"><p>Mouse Mat</p></td></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>Material</p></td><td colspan=\"1\" rowspan=\"1\"><p>Rubber (base)</p></td></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>Surface</p></td><td colspan=\"1\" rowspan=\"1\"><p>Wear-resistant cloth</p></td></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>Compatibility</p></td><td colspan=\"1\" rowspan=\"1\"><p>Optical and laser mice</p></td></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>Intended Use</p></td><td colspan=\"1\" rowspan=\"1\"><p>Office, gaming, home</p></td></tr></tbody></table><h2>Use Scenarios</h2><p>This mouse pad is versatile enough for a variety of environments. In the office, it provides a steady surface for precise spreadsheet work, graphic design, or long hours of browsing. For gamers, the non-slip base and smooth tracking support quick flicks and consistent aim in fast-paced titles.</p><h2>Installation Instructions</h2><p>No tools or assembly are required. Simply follow these steps:</p><ol><li><p>Clear your desk surface of dust and debris.</p></li><li><p>Place the mouse pad rubber-side down on the desk.</p></li><li><p>Press down gently across the entire pad to ensure full contact with the surface.</p></li><li><p>Position your mouse on the pad and begin use.</p></li></ol><div class=\"section-img\"><img src=\"https://test.ebuyl.com/api/v1/files/products/2026/08/28/ff1227b1acf83a7b33908eb679210327.jpg\" alt=\"Close-up of mouse pad edge and rubber base\" style=\"max-width:100%;height:auto\"></div><h2></h2><h2></h2><p></p>",
+  "eligibleForInlineCheckout": true,
+  "enabledForGuestCheckout": true,
+  "estimatedAvailabilities": [
+    {
+      "availabilityThreshold": 10,
+      "availabilityThresholdType": "MORE_THAN",
+      "deliveryOptions": [
+        "SHIP_TO_HOME"
+      ],
+      "estimatedAvailabilityStatus": "IN_STOCK",
+      "estimatedRemainingQuantity": 200,
+      "estimatedSoldQuantity": 0
+    }
+  ],
+  "image": {
+    "imageUrl": "https://test.ebuyl.com/api/v1/files/products/2026/08/14/c52eeb8d71135321b45cd67ced49358e.jpg"
+  },
+  "immediatePay": false,
+  "itemCreationDate": "2026-08-31T06:56:26.000Z",
+  "itemId": "v1|110590445527|0",
+  "itemLocation": {
+    "city": "San Jose",
+    "country": "US",
+    "postalCode": "951**",
+    "stateOrProvince": "California"
+  },
+  "itemWebUrl": "https://sandbox.ebay.com/itm/Non-slip-Wear-resistant-Mouse-Pad-Universal-for-Office-Gaming-Precision-Pad-/110590445527?src=urllib",
+  "legacyItemId": "110590445527",
+  "listingMarketplaceId": "EBAY_US",
+  "localizedAspects": [
+    {
+      "name": "Brand",
+      "type": "STRING",
+      "value": "TIGERWINGS"
+    },
+    {
+      "name": "Color",
+      "type": "STRING",
+      "value": "Black"
+    },
+    {
+      "name": "Material",
+      "type": "STRING",
+      "value": "\u6a61\u80f6"
+    },
+    {
+      "name": "Type",
+      "type": "STRING",
+      "value": "Mouse Mat"
+    }
+  ],
+  "lotSize": 0,
+  "material": "\u6a61\u80f6",
+  "paymentMethods": [
+    {
+      "paymentMethodBrands": [
+        {
+          "paymentMethodBrandType": "PAYPAL"
+        },
+        {
+          "paymentMethodBrandType": "APPLE_PAY"
+        },
+        {
+          "paymentMethodBrandType": "GOOGLE_PAY"
+        }
+      ],
+      "paymentMethodType": "WALLET"
+    },
+    {
+      "paymentMethodBrands": [
+        {
+          "paymentMethodBrandType": "VISA"
+        },
+        {
+          "paymentMethodBrandType": "MASTERCARD"
+        },
+        {
+          "paymentMethodBrandType": "AMERICAN_EXPRESS"
+        },
+        {
+          "paymentMethodBrandType": "DISCOVER"
+        }
+      ],
+      "paymentMethodType": "CREDIT_CARD"
+    }
+  ],
+  "price": {
+    "currency": "USD",
+    "value": "20.00"
+  },
+  "priorityListing": false,
+  "returnTerms": {
+    "refundMethod": "MONEY_BACK",
+    "returnPeriod": {
+      "unit": "CALENDAR_DAY",
+      "value": 30
+    },
+    "returnShippingCostPayer": "SELLER",
+    "returnsAccepted": true
+  },
+  "seller": {
+    "feedbackPercentage": "0.0",
+    "feedbackScore": 1000,
+    "username": "testuser_charmy"
+  },
+  "shipToLocations": {
+    "regionExcluded": [
+      {
+        "regionId": "PF",
+        "regionName": "French Polynesia",
+        "regionType": "COUNTRY"
+      },
+      {
+        "regionId": "LY",
+        "regionName": "Libya",
+        "regionType": "COUNTRY"
+      },
+      {
+        "regionId": "NC",
+        "regionName": "New Caledonia",
+        "regionType": "COUNTRY"
+      },
+      {
+        "regionId": "GP",
+        "regionName": "Guadeloupe",
+        "regionType": "COUNTRY"
+      },
+      {
+        "regionId": "VE",
+        "regionName": "Venezuela",
+        "regionType": "COUNTRY"
+      },
+      {
+        "regionId": "RE",
+        "regionName": "Reunion",
+        "regionType": "COUNTRY"
+      },
+      {
+        "regionId": "BB",
+        "regionName": "Barbados",
+        "regionType": "COUNTRY"
+      },
+      {
+        "regionId": "MQ",
+        "regionName": "Martinique",
+        "regionType": "COUNTRY"
+      },
+      {
+        "regionId": "GF",
+        "regionName": "French Guiana",
+        "regionType": "COUNTRY"
+      },
+      {
+        "regionId": "UA",
+        "regionName": "Ukraine",
+        "regionType": "COUNTRY"
+      },
+      {
+        "regionId": "RU",
+        "regionName": "Russian Federation",
+        "regionType": "COUNTRY"
+      },
+      {
+        "regionId": "IL",
+        "regionName": "Israel",
+        "regionType": "COUNTRY"
+      }
+    ],
+    "regionIncluded": [
+      {
+        "regionId": "US",
+        "regionName": "United States",
+        "regionType": "COUNTRY"
+      }
+    ]
+  },
+  "shippingOptions": [
+    {
+      "additionalShippingCostPerUnit": {
+        "currency": "USD",
+        "value": "0.00"
+      },
+      "maxEstimatedDeliveryDate": "2026-09-14T10:00:00.000Z",
+      "minEstimatedDeliveryDate": "2026-09-10T10:00:00.000Z",
+      "quantityUsedForEstimate": 1,
+      "shippingCarrierCode": "USPS",
+      "shippingCost": {
+        "currency": "USD",
+        "value": "0.00"
+      },
+      "shippingCostType": "FIXED",
+      "shippingServiceCode": "USPS Priority Mail",
+      "trademarkSymbol": "\u00ae",
+      "type": "Expedited Shipping"
+    }
+  ],
+  "taxes": [
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Alabama",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "AL"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Arizona",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "AZ"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Arkansas",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "AR"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "California",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "CA"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Colorado",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "CO"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Connecticut",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "CT"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "District of Columbia",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "DC"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Hawaii",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "HI"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Idaho",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "ID"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Illinois",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "IL"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Indiana",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "IN"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Iowa",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "IA"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Kentucky",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "KY"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Maine",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "ME"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Maryland",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "MD"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Massachusetts",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "MA"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Minnesota",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "MN"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Nebraska",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "NE"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Nevada",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "NV"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "New Jersey",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "NJ"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "New Mexico",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "NM"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "New York",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "NY"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "North Dakota",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "ND"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Ohio",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "OH"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Oklahoma",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "OK"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Pennsylvania",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "PA"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Rhode Island",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "RI"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "South Carolina",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "SC"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "South Dakota",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "SD"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Texas",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "TX"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Utah",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "UT"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Vermont",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "VT"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Virginia",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "VA"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Washington",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "WA"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "West Virginia",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "WV"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Wisconsin",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "WI"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Wyoming",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "WY"
+      },
+      "taxType": "STATE_SALES_TAX"
+    }
+  ],
+  "title": "Non-slip Wear-resistant Mouse Pad, Universal for Office & Gaming, Precision Pad,",
+  "topRatedBuyingExperience": false
+}
