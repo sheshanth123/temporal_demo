@@ -1,0 +1,10 @@
+listing_id: "SYNTHETIC_E-GOLD"
+listing_name: "synthetic-items"
+source_platform: "EBAY"
+endpoint: "https://api.sandbox.ebay.com/buy/browse/v1/item"
+priority: "HIGH"
+mode: "POLL"
+page_size: 20
+schedule: "0 0 * * *"
+enable_flag: true
+

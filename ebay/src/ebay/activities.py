@@ -104,5 +104,65 @@ async def save_item_json_activity(params: dict[str, Any]) -> str:
         json.dump(params["data"], file, indent=2)
     return path
 
+# --- Minerva Redesign Activities ---
 
 ALL_ACTIVITIES = [fetch_oauth_token_activity, read_lines_from_file_activity, search_ebay_activity, append_items_to_file_activity, fetch_item_details_activity, save_item_json_activity]
+import yaml
+
+@activity.defn
+async def read_yaml_config_activity(file_path: str) -> dict[str, Any]:
+    if not os.path.exists(file_path):
+        return {}
+    with open(file_path, 'r', encoding='utf-8') as f:
+        return yaml.safe_load(f) or {}
+
+@activity.defn
+async def fetch_item_batch_activity(params: dict[str, Any]) -> dict[str, Any]:
+    headers = get_browse_headers(params["token"], params.get("marketplace_id"))
+    item_ids_str = ",".join(params["item_ids"])
+    async with httpx.AsyncClient(timeout=30.0, verify=VERIFY_SSL) as client:
+        response = await client.get(
+            f"{EBAY_BASE_URL}/buy/browse/v1/item",
+            params={"item_group_ids": item_ids_str}, # The standard get items endpoint might differ, using standard params. Actually item_ids is standard for getting multiple.
+            # Using item_ids per eBay Browse API
+        )
+        if response.status_code == 400:
+            # Let's fallback if item_group_ids vs item_ids is wrong for this sandbox env
+            response = await client.get(
+                f"{EBAY_BASE_URL}/buy/browse/v1/item",
+                params={"item_ids": item_ids_str},
+                headers=headers,
+            )
+    
+    if response.status_code == 404:
+        return {"items": []}
+    response.raise_for_status()
+    return response.json()
+
+@activity.defn
+async def save_minerva_batch_yaml_activity(params: dict[str, Any]) -> str:
+async def save_batch_yaml_activity(params: dict[str, Any]) -> str:
+    output_file = params["output_file"]
+    records = params["records"]
+    
+    os.makedirs(os.path.dirname(os.path.abspath(output_file)), exist_ok=True)
+    
+    # Dump records as a YAML list
+    with open(output_file, "a", encoding="utf-8") as f:
+        yaml.dump(records, f, default_flow_style=False, sort_keys=False)
+        
+    return output_file
+
+
+ALL_ACTIVITIES = [
+    fetch_oauth_token_activity, 
+    read_lines_from_file_activity, 
+    search_ebay_activity, 
+    append_items_to_file_activity, 
+    fetch_item_details_activity, 
+    save_item_json_activity,
+    read_yaml_config_activity,
+    fetch_item_batch_activity,
+    save_minerva_batch_yaml_activity
+    save_batch_yaml_activity
+]

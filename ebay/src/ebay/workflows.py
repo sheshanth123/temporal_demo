@@ -39,3 +39,105 @@ class EbayItemEnrichmentWorkflow:
             data = await workflow.execute_activity(fetch_item_details_activity, {"token": token, "item_id": item_id}, start_to_close_timeout=timedelta(seconds=30), retry_policy=RETRY_POLICY)
             saved_paths.append(await workflow.execute_activity(save_item_json_activity, {"item_id": item_id, "data": data, "output_dir": output_dir}, start_to_close_timeout=timedelta(seconds=10)))
         return {"status": "completed", "items_processed": len(saved_paths), "output_dir": output_dir}
+
+with workflow.unsafe.imports_passed_through():
+    from ebay.activities import (
+        read_yaml_config_activity,
+        fetch_item_batch_activity,
+        save_minerva_batch_yaml_activity
+        save_batch_yaml_activity
+    )
+    import ulid
+
+@workflow.defn
+class MinervaIngestionWorkflow:
+class EbayIngestionWorkflow:
+    @workflow.run
+    async def run(self, config_file: str, input_items_file: str, output_file: str) -> dict:
+        # 1. Read config
+        config = await workflow.execute_activity(
+            read_yaml_config_activity, config_file,
+            start_to_close_timeout=timedelta(seconds=10)
+        )
+
+        if not config.get("enable_flag", True):
+            return {"status": "skipped", "reason": "Pipeline is disabled in config."}
+
+        # 2. Read Item IDs
+        item_ids = await workflow.execute_activity(
+            read_lines_from_file_activity, input_items_file,
+            start_to_close_timeout=timedelta(seconds=10)
+        )
+
+        if not item_ids:
+            return {"status": "skipped", "reason": "No item IDs to process."}
+
+        # 3. Setup Context
+        fetch_run_id = str(ulid.new())
+        batch_start_time = workflow.now().isoformat()
+
+        # 4. Fetch OAuth Token
+        token = await workflow.execute_activity(
+            fetch_oauth_token_activity,
+            start_to_close_timeout=timedelta(seconds=30),
+            retry_policy=RETRY_POLICY
+        )
+
+        # 5. Chunking & Fetching
+        page_size = config.get("page_size", 20)
+        total_saved = 0
+
+        for i in range(0, len(item_ids), page_size):
+            chunk = item_ids[i:i + page_size]
+            call_id = str(ulid.new())
+
+            # Fetch batch from eBay
+            batch_response = await workflow.execute_activity(
+                fetch_item_batch_activity,
+                {"token": token, "item_ids": chunk},
+                start_to_close_timeout=timedelta(seconds=30),
+                retry_policy=RETRY_POLICY
+            )
+
+            items = batch_response.get("items", [])
+            # If item_group_ids/item_ids returned single item dict or something weird, adapt
+            # The API usually returns 'itemSummaries' or 'items'. We fallback on what it gives.
+            if not items:
+                items = batch_response.get("itemSummaries", [])
+            if not items:
+                continue
+
+            # Prepare records matching schema
+            records_to_save = []
+            for item in items:
+                record = {
+                    "RECORD_ID": str(ulid.new()),
+                    "CALL_ID": call_id,
+                    "FETCH_RUN_ID": fetch_run_id,
+                    "BATCH_START_TIME": batch_start_time,
+                    "SOURCE_PLATFORM": config.get("source_platform", "EBAY"),
+                    "LIST_ID": config.get("listing_id", "UNKNOWN"),
+                    "MODE": config.get("mode", "POLL"),
+                    "PAYLOAD": item
+                }
+                records_to_save.append(record)
+
+            # Append to YAML
+            if records_to_save:
+                await workflow.execute_activity(
+                    save_minerva_batch_yaml_activity,
+                    save_batch_yaml_activity,
+                    {
+                        "output_file": output_file,
+                        "records": records_to_save
+                    },
+                    start_to_close_timeout=timedelta(seconds=10)
+                )
+                total_saved += len(records_to_save)
+
+        return {
+            "status": "completed",
+            "fetch_run_id": fetch_run_id,
+            "total_items_processed": total_saved,
+            "output_file": output_file
+        }

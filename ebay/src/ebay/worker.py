@@ -14,6 +14,8 @@ async def _main() -> None:
         client,
         task_queue=config.TASK_QUEUE,
         workflows=[workflows.EbaySearchPipelineWorkflow, workflows.EbayItemEnrichmentWorkflow],
+        workflows=[workflows.EbaySearchPipelineWorkflow, workflows.EbayItemEnrichmentWorkflow, workflows.MinervaIngestionWorkflow],
+        workflows=[workflows.EbaySearchPipelineWorkflow, workflows.EbayItemEnrichmentWorkflow, workflows.EbayIngestionWorkflow],
         activities=activities.ALL_ACTIVITIES,
     )
     print(f"Worker listening on task queue: {config.TASK_QUEUE}")
