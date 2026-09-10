@@ -59,28 +59,7 @@ async def read_lines_from_file_activity(file_path: str) -> list[str]:
         return [line.strip() for line in file if line.strip()]
 
 
-@activity.defn
-async def search_ebay_activity(params: dict[str, Any]) -> list[str]:
-    headers = get_browse_headers(params["token"], params.get("marketplace_id"))
-    async with httpx.AsyncClient(timeout=30.0, verify=VERIFY_SSL) as client:
-        response = await client.get(
-            f"{EBAY_BASE_URL}/buy/browse/v1/item_summary/search",
-            headers=headers,
-            params={"q": params["query"], "limit": params.get("limit", 3)},
-        )
-    response.raise_for_status()
-    return [item["itemId"] for item in response.json().get("itemSummaries", []) if "itemId" in item]
 
-
-@activity.defn
-async def append_items_to_file_activity(params: dict[str, Any]) -> int:
-    file_path = params["file_path"]
-    existing = set(await read_lines_from_file_activity(file_path))
-    new_ids = [item_id for item_id in params["item_ids"] if item_id not in existing]
-    if new_ids:
-        with open(file_path, "a", encoding="utf-8") as file:
-            file.write("".join(f"{item_id}\n" for item_id in new_ids))
-    return len(new_ids)
 
 
 @activity.defn
@@ -176,8 +155,6 @@ async def save_batch_yaml_activity(params: dict[str, Any]) -> str:
 ALL_ACTIVITIES = [
     fetch_oauth_token_activity, 
     read_lines_from_file_activity, 
-    search_ebay_activity, 
-    append_items_to_file_activity, 
     fetch_item_details_activity, 
     save_item_json_activity,
     read_yaml_config_activity,

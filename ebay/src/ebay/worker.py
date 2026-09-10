@@ -13,7 +13,7 @@ async def _main() -> None:
     worker = Worker(
         client,
         task_queue=config.TASK_QUEUE,
-        workflows=[workflows.EbaySearchPipelineWorkflow, workflows.EbayItemEnrichmentWorkflow, workflows.EbayIngestionWorkflow],
+        workflows=[workflows.EbayItemEnrichmentWorkflow, workflows.EbayIngestionWorkflow],
         activities=activities.ALL_ACTIVITIES,
     )
     print(f"Worker listening on task queue: {config.TASK_QUEUE}")
