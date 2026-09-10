@@ -1,4 +1,4 @@
-"""Submit the eBay search and enrichment workflows."""
+"""Submit the eBay pipelines."""
 
 import asyncio
 import time
@@ -25,11 +25,6 @@ async def _main() -> None:
     )
     print("Enrichment Result:", enrich_result)
 
-    print("\n--- Triggering Workflow 3: Minerva Ingestion ---")
-    minerva_result = await client.execute_workflow(
-        workflows.MinervaIngestionWorkflow.run,
-        args=[str(root / "config.yaml"), str(items_path), str(root / "minerva_output.yaml")],
-        id=f"minerva-ingest-run-{run_id_suffix}",
     print("\n--- Triggering Workflow 3: Data Ingestion ---")
     ingest_result = await client.execute_workflow(
         workflows.EbayIngestionWorkflow.run,
@@ -37,9 +32,7 @@ async def _main() -> None:
         id=f"ebay-ingest-run-{run_id_suffix}",
         task_queue=config.TASK_QUEUE,
     )
-    print("Minerva Ingestion Result:", minerva_result)
     print("Data Ingestion Result:", ingest_result)
-
 
 
 def run_pipeline() -> None:
