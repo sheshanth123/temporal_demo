@@ -1524,3 +1524,1529 @@
     topRatedBuyingExperience: false
   RECORD_ID: 01M25MKHD3DF5RGHK53KPXVV43
   SOURCE_PLATFORM: EBAY
+- BATCH_START_TIME: '2026-09-10T12:48:14.108452+00:00'
+  CALL_ID: 01M25NS4J9PTP25G9PCFKTDG70
+  FETCH_RUN_ID: 01M25NS3RZH8GZKJAXV0E3A4VE
+  LIST_ID: SYNTHETIC_E-GOLD
+  MODE: POLL
+  PAYLOAD:
+    additionalImages:
+    - imageUrl: https://test.ebuyl.com/api/v1/files/products/2026/08/15/9ee7c978838379fef6c6394361471a87.jpg
+    adultOnly: false
+    brand: OGHKO
+    buyingOptions:
+    - FIXED_PRICE
+    categoryId: '47779'
+    categoryIdPath: 58058|3676|47779
+    categoryPath: Computers/Tablets & Networking|Keyboards, Mice & Pointers|Keyboard
+      & Mouse Bundles
+    color: Black
+    condition: New
+    conditionId: '1000'
+    description: '<h1>Wired RGB Gaming Mouse 7D, USB Interface, Ergonomic Right-Handed
+      Design for Desktop &amp; Laptop</h1><img src="https://test.ebuyl.com/api/v1/files/products/2026/08/15/9ee7c978838379fef6c6394361471a87.jpg"
+      alt="Wired RGB gaming mouse 7D ergonomic right-handed USB" style="max-width:100%;height:auto"><h2>Core
+      Selling Points</h2><p>This wired gaming mouse combines a 7D button configuration
+      with a comfortable, right-handed ergonomic shape to support extended gaming
+      and work sessions.</p><ul><li><p><strong>7D Button Configuration:</strong> Multiple
+      programmable buttons provide quick access to essential commands, enhancing in-game
+      responsiveness and workflow efficiency.</p></li><li><p><strong>Ergonomic Right-Handed
+      Design:</strong> The contoured shape follows the natural curve of the right
+      hand, reducing strain during prolonged use.</p></li><li><p><strong>USB Wired
+      Connectivity:</strong> A stable, lag-free wired connection ensures consistent
+      tracking and instant response, compatible with both desktops and laptops.</p></li><li><p><strong>RGB
+      Lighting Effects:</strong> Vibrant RGB illumination adds a dynamic visual element
+      to your gaming station, with a stylish look that complements any setup.</p></li><li><p></p></li></ul><img
+      src="https://test.ebuyl.com/api/v1/files/products/2026/08/24/395e95fbf685823e34d40dc4fc3455d8.jpg"
+      alt="Wired RGB gaming mouse 7D side view" style="max-width:100%;height:auto"><h2>Product
+      Specifications</h2><table style="min-width: 50px;"><colgroup><col style="min-width:
+      25px;"><col style="min-width: 25px;"></colgroup><tbody><tr><th colspan="1" rowspan="1"><p>Attribute</p></th><th
+      colspan="1" rowspan="1"><p>Value</p></th></tr><tr><td colspan="1" rowspan="1"><p>Brand</p></td><td
+      colspan="1" rowspan="1"><p>OGHKO</p></td></tr><tr><td colspan="1" rowspan="1"><p>Model</p></td><td
+      colspan="1" rowspan="1"><p>7D Wired RGB Gaming Mouse</p></td></tr><tr><td colspan="1"
+      rowspan="1"><p>Interface</p></td><td colspan="1" rowspan="1"><p>USB Wired</p></td></tr><tr><td
+      colspan="1" rowspan="1"><p>Button Count</p></td><td colspan="1" rowspan="1"><p>7D
+      (7-button configuration)</p></td></tr><tr><td colspan="1" rowspan="1"><p>Design</p></td><td
+      colspan="1" rowspan="1"><p>Ergonomic, Right-Handed</p></td></tr><tr><td colspan="1"
+      rowspan="1"><p>Lighting</p></td><td colspan="1" rowspan="1"><p>RGB</p></td></tr><tr><td
+      colspan="1" rowspan="1"><p>Compatibility</p></td><td colspan="1" rowspan="1"><p>Desktop
+      &amp; Laptop Computers</p></td></tr><tr><td colspan="1" rowspan="1"><p>Connection
+      Type</p></td><td colspan="1" rowspan="1"><p>Wired (USB)</p></td></tr></tbody></table><h2>Use
+      Scenarios</h2><p>This mouse is ideal for a variety of settings. For gamers,
+      the 7D buttons and precise tracking provide an edge in fast-paced titles such
+      as FPS, MOBA, and battle royale games. For office professionals, the ergonomic
+      shape supports comfortable all-day use for document editing, spreadsheet work,
+      and web browsing. It also suits general home computing, media consumption, and
+      online learning, making it a versatile companion for both desktop and laptop
+      users.</p><img src="https://test.ebuyl.com/api/v1/files/products/2026/08/24/9684d415318243d093b949ef113b4a41.jpg"
+      alt="Wired RGB gaming mouse 7D top view" style="max-width:100%;height:auto"><h2>Installation
+      Instructions</h2><ol><li><p>Locate an available USB port on your desktop or
+      laptop computer.</p></li><li><p>Plug the mouse''s USB connector firmly into
+      the port.</p></li><li><p>Wait a few seconds for the operating system to recognize
+      the device automatically (no driver installation is required).</p></li><li><p>Once
+      the RGB lighting activates, the mouse is ready for use.</p></li><li><p></p></li></ol><h2></h2><h2>Care
+      &amp; Use</h2><p>Keep the mouse clean by wiping the surface with a soft, dry
+      cloth. Avoid exposing it to liquids, extreme heat, or direct sunlight. Unplug
+      the USB cable when not in use for extended periods to maintain optimal performance.</p>'
+    eligibleForInlineCheckout: true
+    enabledForGuestCheckout: true
+    estimatedAvailabilities:
+    - availabilityThreshold: 10
+      availabilityThresholdType: MORE_THAN
+      deliveryOptions:
+      - SHIP_TO_HOME
+      estimatedAvailabilityStatus: IN_STOCK
+      estimatedRemainingQuantity: 100
+      estimatedSoldQuantity: 0
+    image:
+      imageUrl: https://test.ebuyl.com/api/v1/files/products/2026/08/15/ad220ffe6c7e30c35311710387e5b324.jpg
+    immediatePay: false
+    itemCreationDate: '2026-08-24T08:53:04.000Z'
+    itemId: v1|110590237758|0
+    itemLocation:
+      city: San Jose
+      country: US
+      postalCode: 951**
+      stateOrProvince: California
+    itemWebUrl: https://sandbox.ebay.com/itm/Wired-RGB-Gaming-Mouse-7D-USB-Ergonomic-Right-Hand-Design-Universal-for-Deskt-/110590237758?src=urllib
+    legacyItemId: '110590237758'
+    listingMarketplaceId: EBAY_US
+    localizedAspects:
+    - name: Brand
+      type: STRING
+      value: OGHKO
+    - name: Color
+      type: STRING
+      value: Black
+    - name: "DPI\u7CBE\u51C6\u5EA6"
+      type: STRING
+      value: '1600'
+    - name: Type
+      type: STRING
+      value: "\u6709\u7EBF"
+    lotSize: 0
+    paymentMethods:
+    - paymentMethodBrands:
+      - paymentMethodBrandType: PAYPAL
+      - paymentMethodBrandType: APPLE_PAY
+      - paymentMethodBrandType: GOOGLE_PAY
+      paymentMethodType: WALLET
+    - paymentMethodBrands:
+      - paymentMethodBrandType: VISA
+      - paymentMethodBrandType: MASTERCARD
+      - paymentMethodBrandType: AMERICAN_EXPRESS
+      - paymentMethodBrandType: DISCOVER
+      paymentMethodType: CREDIT_CARD
+    price:
+      currency: USD
+      value: '20.00'
+    priorityListing: false
+    returnTerms:
+      refundMethod: MONEY_BACK
+      returnPeriod:
+        unit: CALENDAR_DAY
+        value: 30
+      returnShippingCostPayer: SELLER
+      returnsAccepted: true
+    seller:
+      feedbackPercentage: '0.0'
+      feedbackScore: 1000
+      username: testuser_charmy
+    shipToLocations:
+      regionExcluded:
+      - regionId: PF
+        regionName: French Polynesia
+        regionType: COUNTRY
+      - regionId: LY
+        regionName: Libya
+        regionType: COUNTRY
+      - regionId: NC
+        regionName: New Caledonia
+        regionType: COUNTRY
+      - regionId: GP
+        regionName: Guadeloupe
+        regionType: COUNTRY
+      - regionId: VE
+        regionName: Venezuela
+        regionType: COUNTRY
+      - regionId: RE
+        regionName: Reunion
+        regionType: COUNTRY
+      - regionId: BB
+        regionName: Barbados
+        regionType: COUNTRY
+      - regionId: MQ
+        regionName: Martinique
+        regionType: COUNTRY
+      - regionId: GF
+        regionName: French Guiana
+        regionType: COUNTRY
+      - regionId: UA
+        regionName: Ukraine
+        regionType: COUNTRY
+      - regionId: RU
+        regionName: Russian Federation
+        regionType: COUNTRY
+      - regionId: IL
+        regionName: Israel
+        regionType: COUNTRY
+      regionIncluded:
+      - regionId: US
+        regionName: United States
+        regionType: COUNTRY
+    shippingOptions:
+    - additionalShippingCostPerUnit:
+        currency: USD
+        value: '0.00'
+      maxEstimatedDeliveryDate: '2026-09-16T10:00:00.000Z'
+      minEstimatedDeliveryDate: '2026-09-13T10:00:00.000Z'
+      quantityUsedForEstimate: 1
+      shippingCarrierCode: USPS
+      shippingCost:
+        currency: USD
+        value: '0.00'
+      shippingCostType: FIXED
+      shippingServiceCode: USPS Priority Mail
+      trademarkSymbol: "\xAE"
+      type: Expedited Shipping
+    taxes:
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Alabama
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: AL
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Arizona
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: AZ
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Arkansas
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: AR
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: California
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: CA
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Colorado
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: CO
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Connecticut
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: CT
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: District of Columbia
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: DC
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Hawaii
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: HI
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Idaho
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: ID
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Illinois
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: IL
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Indiana
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: IN
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Iowa
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: IA
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Kentucky
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: KY
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Maine
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: ME
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Maryland
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: MD
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Massachusetts
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: MA
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Minnesota
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: MN
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Nebraska
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: NE
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Nevada
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: NV
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: New Jersey
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: NJ
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: New Mexico
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: NM
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: New York
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: NY
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: North Dakota
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: ND
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Ohio
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: OH
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Oklahoma
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: OK
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Pennsylvania
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: PA
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Rhode Island
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: RI
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: South Carolina
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: SC
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: South Dakota
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: SD
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Texas
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: TX
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Utah
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: UT
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Vermont
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: VT
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Virginia
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: VA
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Washington
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: WA
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: West Virginia
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: WV
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Wisconsin
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: WI
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Wyoming
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: WY
+      taxType: STATE_SALES_TAX
+    title: Wired RGB Gaming Mouse, 7D USB, Ergonomic Right-Hand Design, Universal
+      for Deskt
+    topRatedBuyingExperience: false
+  RECORD_ID: 01M25NS64NKRX5DH3HSHKPNWFV
+  SOURCE_PLATFORM: EBAY
+- BATCH_START_TIME: '2026-09-10T12:48:14.108452+00:00'
+  CALL_ID: 01M25NS4J9PTP25G9PCFKTDG70
+  FETCH_RUN_ID: 01M25NS3RZH8GZKJAXV0E3A4VE
+  LIST_ID: SYNTHETIC_E-GOLD
+  MODE: POLL
+  PAYLOAD:
+    adultOnly: false
+    buyingOptions:
+    - FIXED_PRICE
+    categoryId: '9355'
+    categoryIdPath: 15032|9355
+    categoryPath: Cell Phones & Accessories|Cell Phones & Smartphones
+    condition: New
+    conditionId: '1000'
+    description: High-performance wired gaming mouse with ergonomic design and customizable
+      RGB lighting.
+    eligibleForInlineCheckout: true
+    enabledForGuestCheckout: true
+    estimatedAvailabilities:
+    - deliveryOptions:
+      - SHIP_TO_HOME
+      estimatedAvailabilityStatus: IN_STOCK
+      estimatedAvailableQuantity: 1
+      estimatedRemainingQuantity: 1
+      estimatedSoldQuantity: 0
+    image:
+      height: 1200
+      imageUrl: https://i.ebayimg.sandbox.ebay.com/images/g/I98AAeSwFUpqnDI4/s-l1600.jpg
+      width: 1600
+    immediatePay: true
+    itemCreationDate: '2026-09-05T15:16:26.000Z'
+    itemId: v1|110590547091|0
+    itemLocation:
+      city: Huntley
+      country: US
+      postalCode: 601**
+      stateOrProvince: Illinois
+    itemWebUrl: https://sandbox.ebay.com/itm/Razer-Gaming-Mouse-/110590547091?src=urllib
+    legacyItemId: '110590547091'
+    listingMarketplaceId: EBAY_US
+    lotSize: 0
+    paymentMethods:
+    - paymentMethodBrands:
+      - paymentMethodBrandType: PAYPAL
+      - paymentMethodBrandType: APPLE_PAY
+      - paymentMethodBrandType: GOOGLE_PAY
+      paymentMethodType: WALLET
+    - paymentMethodBrands:
+      - paymentMethodBrandType: VISA
+      - paymentMethodBrandType: MASTERCARD
+      - paymentMethodBrandType: AMERICAN_EXPRESS
+      - paymentMethodBrandType: DISCOVER
+      paymentMethodType: CREDIT_CARD
+    price:
+      currency: USD
+      value: '40.00'
+    priorityListing: false
+    quantityLimitPerBuyer: 1
+    returnTerms:
+      refundMethod: MONEY_BACK
+      returnPeriod:
+        unit: CALENDAR_DAY
+        value: 30
+      returnShippingCostPayer: SELLER
+      returnsAccepted: true
+    seller:
+      feedbackPercentage: '0.0'
+      feedbackScore: 500
+      username: testuser_seller-marywieczorek
+    shipToLocations:
+      regionExcluded:
+      - regionId: PF
+        regionName: French Polynesia
+        regionType: COUNTRY
+      - regionId: LY
+        regionName: Libya
+        regionType: COUNTRY
+      - regionId: NC
+        regionName: New Caledonia
+        regionType: COUNTRY
+      - regionId: GP
+        regionName: Guadeloupe
+        regionType: COUNTRY
+      - regionId: VE
+        regionName: Venezuela
+        regionType: COUNTRY
+      - regionId: RE
+        regionName: Reunion
+        regionType: COUNTRY
+      - regionId: BB
+        regionName: Barbados
+        regionType: COUNTRY
+      - regionId: MQ
+        regionName: Martinique
+        regionType: COUNTRY
+      - regionId: GF
+        regionName: French Guiana
+        regionType: COUNTRY
+      - regionId: UA
+        regionName: Ukraine
+        regionType: COUNTRY
+      - regionId: RU
+        regionName: Russian Federation
+        regionType: COUNTRY
+      - regionId: IL
+        regionName: Israel
+        regionType: COUNTRY
+      regionIncluded:
+      - regionId: US
+        regionName: United States
+        regionType: COUNTRY
+    shippingOptions:
+    - maxEstimatedDeliveryDate: '2026-09-17T10:00:00.000Z'
+      minEstimatedDeliveryDate: '2026-09-14T10:00:00.000Z'
+      quantityUsedForEstimate: 1
+      shippingCarrierCode: USPS
+      shippingCost:
+        currency: USD
+        value: '0.00'
+      shippingCostType: CALCULATED
+      shippingServiceCode: USPS Parcel Select Ground
+      trademarkSymbol: "\xAE"
+      type: Economy Shipping
+    taxes:
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Alabama
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: AL
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Arizona
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: AZ
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Arkansas
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: AR
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: California
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: CA
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Colorado
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: CO
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Connecticut
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: CT
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: District of Columbia
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: DC
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Hawaii
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: HI
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Idaho
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: ID
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Illinois
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: IL
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Indiana
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: IN
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Iowa
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: IA
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Kentucky
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: KY
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Maine
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: ME
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Maryland
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: MD
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Massachusetts
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: MA
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Minnesota
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: MN
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Nebraska
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: NE
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Nevada
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: NV
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: New Jersey
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: NJ
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: New Mexico
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: NM
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: New York
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: NY
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: North Dakota
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: ND
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Ohio
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: OH
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Oklahoma
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: OK
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Pennsylvania
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: PA
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Rhode Island
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: RI
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: South Carolina
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: SC
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: South Dakota
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: SD
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Texas
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: TX
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Utah
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: UT
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Vermont
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: VT
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Virginia
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: VA
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Washington
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: WA
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: West Virginia
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: WV
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Wisconsin
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: WI
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Wyoming
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: WY
+      taxType: STATE_SALES_TAX
+    title: Razer Gaming Mouse
+    topRatedBuyingExperience: false
+  RECORD_ID: 01M25NS64NGV7V2YPCF2R4YHB2
+  SOURCE_PLATFORM: EBAY
+- BATCH_START_TIME: '2026-09-10T12:48:14.108452+00:00'
+  CALL_ID: 01M25NS4J9PTP25G9PCFKTDG70
+  FETCH_RUN_ID: 01M25NS3RZH8GZKJAXV0E3A4VE
+  LIST_ID: SYNTHETIC_E-GOLD
+  MODE: POLL
+  PAYLOAD:
+    additionalImages:
+    - imageUrl: https://test.ebuyl.com/api/v1/files/products/2026/08/14/3bdc9af97f3e8c4a3e6435b8edc75517.jpg
+    adultOnly: false
+    brand: TIGERWINGS
+    buyingOptions:
+    - FIXED_PRICE
+    categoryId: '23895'
+    categoryIdPath: 58058|31530|23895
+    categoryPath: Computers/Tablets & Networking|Laptop & Desktop Accessories|Mouse
+      Pads & Wrist Rests
+    color: Black
+    condition: New
+    conditionId: '1000'
+    description: '<style>
+
+      :root { font-family: Arial, Helvetica, sans-serif; color: #222; line-height:
+      1.5 }
+
+      h1 { font-size: 1.6em }
+
+      h2 { font-size: 1.3em; border-bottom: 2px solid #eee; padding-bottom: 0.2em
+      }
+
+      img { height: auto }
+
+      li { margin-bottom: 0.4em }
+
+      table { border-collapse: collapse; width: 100% }
+
+      th, td { border: 1px solid #ddd; padding: 8px 12px; text-align: left; vertical-align:
+      top }
+
+      th { background-color: #f5f5f5 }
+
+      .hero { margin-bottom: 1em }
+
+      </style>
+
+      <h1>Non-slip Wear-resistant Mouse Pad, Universal for Office &amp; Gaming, Precision
+      Pad</h1><div class="hero"><img src="https://test.ebuyl.com/api/v1/files/products/2026/08/14/3bdc9af97f3e8c4a3e6435b8edc75517.jpg"
+      alt="TIGERWINGS non-slip mouse pad on desk" style="max-width:100%;height:auto"></div><h2>Core
+      Selling Points</h2><p>This TIGERWINGS mouse pad combines a durable, wear-resistant
+      surface with a non-slip rubber base, providing reliable tracking and stability
+      for both office work and gaming. Its universal size and neutral design fit any
+      desk setup, while the precision surface supports smooth cursor control for everyday
+      tasks and fast-paced gameplay alike.</p><h2>Key Features</h2><ul><li><p><strong>Non-slip
+      rubber base:</strong> The natural rubber underside grips the desk firmly, preventing
+      unwanted movement during intense gaming sessions or busy workdays.</p></li><li><p><strong>Wear-resistant
+      surface:</strong> The textured cloth top is built to withstand heavy daily use,
+      resisting fraying and maintaining a consistent glide over time.</p></li><li><p><strong>Precision
+      tracking:</strong> The optimized surface works with optical and laser mice,
+      delivering accurate cursor movement for detailed design work or competitive
+      play.</p></li><li><p></p></li></ul><div class="section-img"><img src="https://test.ebuyl.com/api/v1/files/products/2026/08/28/e138eb942c43767ab27c07c0b08a216b.jpg"
+      alt="Mouse pad with mouse on top showing surface texture" style="max-width:100%;height:auto"></div><h2>Product
+      Specifications</h2><table style="min-width: 50px;"><colgroup><col style="min-width:
+      25px;"><col style="min-width: 25px;"></colgroup><tbody><tr><th colspan="1" rowspan="1"><p>Attribute</p></th><th
+      colspan="1" rowspan="1"><p>Value</p></th></tr><tr><td colspan="1" rowspan="1"><p>Brand</p></td><td
+      colspan="1" rowspan="1"><p>TIGERWINGS</p></td></tr><tr><td colspan="1" rowspan="1"><p>Type</p></td><td
+      colspan="1" rowspan="1"><p>Mouse Mat</p></td></tr><tr><td colspan="1" rowspan="1"><p>Material</p></td><td
+      colspan="1" rowspan="1"><p>Rubber (base)</p></td></tr><tr><td colspan="1" rowspan="1"><p>Surface</p></td><td
+      colspan="1" rowspan="1"><p>Wear-resistant cloth</p></td></tr><tr><td colspan="1"
+      rowspan="1"><p>Compatibility</p></td><td colspan="1" rowspan="1"><p>Optical
+      and laser mice</p></td></tr><tr><td colspan="1" rowspan="1"><p>Intended Use</p></td><td
+      colspan="1" rowspan="1"><p>Office, gaming, home</p></td></tr></tbody></table><h2>Use
+      Scenarios</h2><p>This mouse pad is versatile enough for a variety of environments.
+      In the office, it provides a steady surface for precise spreadsheet work, graphic
+      design, or long hours of browsing. For gamers, the non-slip base and smooth
+      tracking support quick flicks and consistent aim in fast-paced titles.</p><h2>Installation
+      Instructions</h2><p>No tools or assembly are required. Simply follow these steps:</p><ol><li><p>Clear
+      your desk surface of dust and debris.</p></li><li><p>Place the mouse pad rubber-side
+      down on the desk.</p></li><li><p>Press down gently across the entire pad to
+      ensure full contact with the surface.</p></li><li><p>Position your mouse on
+      the pad and begin use.</p></li></ol><div class="section-img"><img src="https://test.ebuyl.com/api/v1/files/products/2026/08/28/ff1227b1acf83a7b33908eb679210327.jpg"
+      alt="Close-up of mouse pad edge and rubber base" style="max-width:100%;height:auto"></div><h2></h2><h2></h2><p></p>'
+    eligibleForInlineCheckout: true
+    enabledForGuestCheckout: true
+    estimatedAvailabilities:
+    - availabilityThreshold: 10
+      availabilityThresholdType: MORE_THAN
+      deliveryOptions:
+      - SHIP_TO_HOME
+      estimatedAvailabilityStatus: IN_STOCK
+      estimatedRemainingQuantity: 200
+      estimatedSoldQuantity: 0
+    image:
+      imageUrl: https://test.ebuyl.com/api/v1/files/products/2026/08/14/c52eeb8d71135321b45cd67ced49358e.jpg
+    immediatePay: false
+    itemCreationDate: '2026-08-31T06:56:26.000Z'
+    itemId: v1|110590445527|0
+    itemLocation:
+      city: San Jose
+      country: US
+      postalCode: 951**
+      stateOrProvince: California
+    itemWebUrl: https://sandbox.ebay.com/itm/Non-slip-Wear-resistant-Mouse-Pad-Universal-for-Office-Gaming-Precision-Pad-/110590445527?src=urllib
+    legacyItemId: '110590445527'
+    listingMarketplaceId: EBAY_US
+    localizedAspects:
+    - name: Brand
+      type: STRING
+      value: TIGERWINGS
+    - name: Color
+      type: STRING
+      value: Black
+    - name: Material
+      type: STRING
+      value: "\u6A61\u80F6"
+    - name: Type
+      type: STRING
+      value: Mouse Mat
+    lotSize: 0
+    material: "\u6A61\u80F6"
+    paymentMethods:
+    - paymentMethodBrands:
+      - paymentMethodBrandType: PAYPAL
+      - paymentMethodBrandType: APPLE_PAY
+      - paymentMethodBrandType: GOOGLE_PAY
+      paymentMethodType: WALLET
+    - paymentMethodBrands:
+      - paymentMethodBrandType: VISA
+      - paymentMethodBrandType: MASTERCARD
+      - paymentMethodBrandType: AMERICAN_EXPRESS
+      - paymentMethodBrandType: DISCOVER
+      paymentMethodType: CREDIT_CARD
+    price:
+      currency: USD
+      value: '20.00'
+    priorityListing: false
+    returnTerms:
+      refundMethod: MONEY_BACK
+      returnPeriod:
+        unit: CALENDAR_DAY
+        value: 30
+      returnShippingCostPayer: SELLER
+      returnsAccepted: true
+    seller:
+      feedbackPercentage: '0.0'
+      feedbackScore: 1000
+      username: testuser_charmy
+    shipToLocations:
+      regionExcluded:
+      - regionId: PF
+        regionName: French Polynesia
+        regionType: COUNTRY
+      - regionId: LY
+        regionName: Libya
+        regionType: COUNTRY
+      - regionId: NC
+        regionName: New Caledonia
+        regionType: COUNTRY
+      - regionId: GP
+        regionName: Guadeloupe
+        regionType: COUNTRY
+      - regionId: VE
+        regionName: Venezuela
+        regionType: COUNTRY
+      - regionId: RE
+        regionName: Reunion
+        regionType: COUNTRY
+      - regionId: BB
+        regionName: Barbados
+        regionType: COUNTRY
+      - regionId: MQ
+        regionName: Martinique
+        regionType: COUNTRY
+      - regionId: GF
+        regionName: French Guiana
+        regionType: COUNTRY
+      - regionId: UA
+        regionName: Ukraine
+        regionType: COUNTRY
+      - regionId: RU
+        regionName: Russian Federation
+        regionType: COUNTRY
+      - regionId: IL
+        regionName: Israel
+        regionType: COUNTRY
+      regionIncluded:
+      - regionId: US
+        regionName: United States
+        regionType: COUNTRY
+    shippingOptions:
+    - additionalShippingCostPerUnit:
+        currency: USD
+        value: '0.00'
+      maxEstimatedDeliveryDate: '2026-09-16T10:00:00.000Z'
+      minEstimatedDeliveryDate: '2026-09-13T10:00:00.000Z'
+      quantityUsedForEstimate: 1
+      shippingCarrierCode: USPS
+      shippingCost:
+        currency: USD
+        value: '0.00'
+      shippingCostType: FIXED
+      shippingServiceCode: USPS Priority Mail
+      trademarkSymbol: "\xAE"
+      type: Expedited Shipping
+    taxes:
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Alabama
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: AL
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Arizona
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: AZ
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Arkansas
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: AR
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: California
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: CA
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Colorado
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: CO
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Connecticut
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: CT
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: District of Columbia
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: DC
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Hawaii
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: HI
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Idaho
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: ID
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Illinois
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: IL
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Indiana
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: IN
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Iowa
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: IA
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Kentucky
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: KY
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Maine
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: ME
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Maryland
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: MD
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Massachusetts
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: MA
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Minnesota
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: MN
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Nebraska
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: NE
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Nevada
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: NV
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: New Jersey
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: NJ
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: New Mexico
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: NM
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: New York
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: NY
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: North Dakota
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: ND
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Ohio
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: OH
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Oklahoma
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: OK
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Pennsylvania
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: PA
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Rhode Island
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: RI
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: South Carolina
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: SC
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: South Dakota
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: SD
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Texas
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: TX
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Utah
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: UT
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Vermont
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: VT
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Virginia
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: VA
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Washington
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: WA
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: West Virginia
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: WV
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Wisconsin
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: WI
+      taxType: STATE_SALES_TAX
+    - ebayCollectAndRemitTax: true
+      includedInPrice: false
+      shippingAndHandlingTaxed: true
+      taxJurisdiction:
+        region:
+          regionName: Wyoming
+          regionType: STATE_OR_PROVINCE
+        taxJurisdictionId: WY
+      taxType: STATE_SALES_TAX
+    title: Non-slip Wear-resistant Mouse Pad, Universal for Office & Gaming, Precision
+      Pad,
+    topRatedBuyingExperience: false
+  RECORD_ID: 01M25NS64NQ930A8C4GWCA70SW
+  SOURCE_PLATFORM: EBAY
