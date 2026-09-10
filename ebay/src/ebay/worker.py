@@ -13,8 +13,6 @@ async def _main() -> None:
     worker = Worker(
         client,
         task_queue=config.TASK_QUEUE,
-        workflows=[workflows.EbaySearchPipelineWorkflow, workflows.EbayItemEnrichmentWorkflow],
-        workflows=[workflows.EbaySearchPipelineWorkflow, workflows.EbayItemEnrichmentWorkflow, workflows.MinervaIngestionWorkflow],
         workflows=[workflows.EbaySearchPipelineWorkflow, workflows.EbayItemEnrichmentWorkflow, workflows.EbayIngestionWorkflow],
         activities=activities.ALL_ACTIVITIES,
     )

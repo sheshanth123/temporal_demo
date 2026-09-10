@@ -7,6 +7,18 @@ from temporalio.common import RetryPolicy
 
 with workflow.unsafe.imports_passed_through():
     from ebay.activities import append_items_to_file_activity, fetch_item_details_activity, fetch_oauth_token_activity, read_lines_from_file_activity, save_item_json_activity, search_ebay_activity
+    from ebay.activities import (
+        append_items_to_file_activity, 
+        fetch_item_details_activity, 
+        fetch_oauth_token_activity, 
+        read_lines_from_file_activity, 
+        save_item_json_activity, 
+        search_ebay_activity,
+        read_yaml_config_activity,
+        fetch_item_batch_activity,
+        save_batch_yaml_activity
+    )
+    import ulid
 
 RETRY_POLICY = RetryPolicy(initial_interval=timedelta(seconds=2), backoff_coefficient=2.0, maximum_interval=timedelta(seconds=30), maximum_attempts=4)
 
@@ -102,6 +114,7 @@ class EbayIngestionWorkflow:
             items = batch_response.get("items", [])
             # If item_group_ids/item_ids returned single item dict or something weird, adapt
             # The API usually returns 'itemSummaries' or 'items'. We fallback on what it gives.
+            # Fallback
             if not items:
                 items = batch_response.get("itemSummaries", [])
             if not items:

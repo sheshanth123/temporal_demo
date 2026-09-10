@@ -7,6 +7,7 @@ from typing import Any
 
 import httpx
 from temporalio import activity
+import yaml
 
 from ebay.config import (
     EBAY_ACCEPT_LANGUAGE,
@@ -108,6 +109,7 @@ async def save_item_json_activity(params: dict[str, Any]) -> str:
 
 ALL_ACTIVITIES = [fetch_oauth_token_activity, read_lines_from_file_activity, search_ebay_activity, append_items_to_file_activity, fetch_item_details_activity, save_item_json_activity]
 import yaml
+# --- Ebay Redesign Activities ---
 
 @activity.defn
 async def read_yaml_config_activity(file_path: str) -> dict[str, Any]:
@@ -115,6 +117,7 @@ async def read_yaml_config_activity(file_path: str) -> dict[str, Any]:
         return {}
     with open(file_path, 'r', encoding='utf-8') as f:
         return yaml.safe_load(f) or {}
+
 
 @activity.defn
 async def fetch_item_batch_activity(params: dict[str, Any]) -> dict[str, Any]:
@@ -138,6 +141,22 @@ async def fetch_item_batch_activity(params: dict[str, Any]) -> dict[str, Any]:
         return {"items": []}
     response.raise_for_status()
     return response.json()
+    import asyncio
+    async def fetch_one(client, item_id):
+        resp = await client.get(f"{EBAY_BASE_URL}/buy/browse/v1/item/{item_id}", headers=headers)
+        if resp.status_code == 200:
+            return resp.json()
+        if resp.status_code == 404:
+            return None
+        resp.raise_for_status()
+
+    async with httpx.AsyncClient(timeout=30.0, verify=VERIFY_SSL, limits=httpx.Limits(max_connections=10)) as client:
+        tasks = [fetch_one(client, item_id) for item_id in params["item_ids"]]
+        results = await asyncio.gather(*tasks, return_exceptions=False)
+        
+    items = [r for r in results if r is not None]
+    return {"items": items}
+
 
 @activity.defn
 async def save_minerva_batch_yaml_activity(params: dict[str, Any]) -> str:
