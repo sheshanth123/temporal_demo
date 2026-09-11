@@ -16,7 +16,7 @@ async def _main() -> None:
     """Connects to the Temporal server and triggers the Enrichment and Ingestion workflows."""
     client = await Client.connect(config.TEMPORAL_HOST)
     root = Path.cwd()
-    pipeline_config = root / "pipeline_config.yaml"
+    pipeline_config = root / "input_data" / "input_data.yaml"
 
     run_id_suffix = int(time.time())
 

@@ -133,7 +133,7 @@ class EbayApiClient:
 
 
 def main() -> None:
-    queries_file = "search_queries.txt"
+    queries_file = r"scripts\search_queries.txt"
     output_file = "item_ids.txt"
     marketplace = None
     limit = 3
