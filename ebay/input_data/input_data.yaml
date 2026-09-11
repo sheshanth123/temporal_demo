@@ -1,40 +1,180 @@
 listings:
-  - listing_id: "v1|110590237758|0"
-    listing_name: "Gaming Mouse 1"
+  - listing_id: 1
+    listing_name: "Item"
+    Item_id: "v1|110590237507|0"
     source_platform: "ebay"
     endpoint: "/buy/browse/v1/item"
     priority: "high"
     mode: "polling"
-    page_size: 20
-    schedule: "0 * * * *"
     enable: true
 
-  - listing_id: "v1|110590547091|0"
-    listing_name: "Gaming Mouse 2"
+  - listing_id: 2
+    listing_name: "Item"
+    Item_id: "v1|110590625226|0"
     source_platform: "ebay"
     endpoint: "/buy/browse/v1/item"
-    priority: "medium"
+    priority: "high"
     mode: "polling"
-    page_size: 20
-    schedule: "0 12 * * *"
     enable: true
 
-  - listing_id: "v1|110590445527|0"
-    listing_name: "Gaming Mouse 3"
+  - listing_id: 3
+    listing_name: "Item"
+    Item_id: "v1|110590595202|0"
     source_platform: "ebay"
     endpoint: "/buy/browse/v1/item"
-    priority: "low"
+    priority: "high"
     mode: "polling"
-    page_size: 20
-    schedule: "0 0 * * *"
     enable: true
 
-  - listing_id: "v1|999999999999|0"
-    listing_name: "Disabled Item"
+  - listing_id: 4
+    listing_name: "Item"
+    Item_id: "v1|110590447291|0"
     source_platform: "ebay"
     endpoint: "/buy/browse/v1/item"
-    priority: "low"
+    priority: "high"
     mode: "polling"
-    page_size: 20
-    schedule: "0 0 * * *"
-    enable: false
+    enable: true
+
+  - listing_id: 5
+    listing_name: "Item"
+    Item_id: "v1|110590185676|0"
+    source_platform: "ebay"
+    endpoint: "/buy/browse/v1/item"
+    priority: "high"
+    mode: "polling"
+    enable: true
+
+  - listing_id: 6
+    listing_name: "Item"
+    Item_id: "v1|110590185657|410111411816"
+    source_platform: "ebay"
+    endpoint: "/buy/browse/v1/item"
+    priority: "high"
+    mode: "polling"
+    enable: true
+
+  - listing_id: 7
+    listing_name: "Item"
+    Item_id: "v1|110590185674|410111411062"
+    source_platform: "ebay"
+    endpoint: "/buy/browse/v1/item"
+    priority: "high"
+    mode: "polling"
+    enable: true
+
+  - listing_id: 8
+    listing_name: "Item"
+    Item_id: "v1|110590243016|0"
+    source_platform: "ebay"
+    endpoint: "/buy/browse/v1/item"
+    priority: "high"
+    mode: "polling"
+    enable: true
+
+  - listing_id: 9
+    listing_name: "Item"
+    Item_id: "v1|110590243021|0"
+    source_platform: "ebay"
+    endpoint: "/buy/browse/v1/item"
+    priority: "high"
+    mode: "polling"
+    enable: true
+
+  - listing_id: 10
+    listing_name: "Item"
+    Item_id: "v1|110590243023|0"
+    source_platform: "ebay"
+    endpoint: "/buy/browse/v1/item"
+    priority: "high"
+    mode: "polling"
+    enable: true
+
+  - listing_id: 11
+    listing_name: "Item"
+    Item_id: "v1|110590243025|0"
+    source_platform: "ebay"
+    endpoint: "/buy/browse/v1/item"
+    priority: "high"
+    mode: "polling"
+    enable: true
+
+  - listing_id: 12
+    listing_name: "Item"
+    Item_id: "v1|110590243026|0"
+    source_platform: "ebay"
+    endpoint: "/buy/browse/v1/item"
+    priority: "high"
+    mode: "polling"
+    enable: true
+
+  - listing_id: 13
+    listing_name: "Item"
+    Item_id: "v1|110590243027|0"
+    source_platform: "ebay"
+    endpoint: "/buy/browse/v1/item"
+    priority: "high"
+    mode: "polling"
+    enable: true
+
+  - listing_id: 14
+    listing_name: "Item"
+    Item_id: "v1|110590243028|0"
+    source_platform: "ebay"
+    endpoint: "/buy/browse/v1/item"
+    priority: "high"
+    mode: "polling"
+    enable: true
+
+  - listing_id: 15
+    listing_name: "Item"
+    Item_id: "v1|110590243029|0"
+    source_platform: "ebay"
+    endpoint: "/buy/browse/v1/item"
+    priority: "high"
+    mode: "polling"
+    enable: true
+
+  - listing_id: 16
+    listing_name: "Item"
+    Item_id: "v1|110590243031|0"
+    source_platform: "ebay"
+    endpoint: "/buy/browse/v1/item"
+    priority: "high"
+    mode: "polling"
+    enable: true
+
+  - listing_id: 17
+    listing_name: "Item"
+    Item_id: "v1|110590243034|0"
+    source_platform: "ebay"
+    endpoint: "/buy/browse/v1/item"
+    priority: "high"
+    mode: "polling"
+    enable: true
+
+  - listing_id: 18
+    listing_name: "Item"
+    Item_id: "v1|110590243036|0"
+    source_platform: "ebay"
+    endpoint: "/buy/browse/v1/item"
+    priority: "high"
+    mode: "polling"
+    enable: true
+  
+  - listing_id: 19
+    listing_name: "Item"
+    Item_id: "v1|110590243989|0"
+    source_platform: "ebay"
+    endpoint: "/buy/browse/v1/item"
+    priority: "high"
+    mode: "polling"
+    enable: true
+
+  - listing_id: 20
+    listing_name: "Item"
+    Item_id: "v1|110590543971|0"
+    source_platform: "ebay"
+    endpoint: "/buy/browse/v1/item"
+    priority: "high"
+    mode: "polling"
+    enable: true

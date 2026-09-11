@@ -1,0 +1,630 @@
+{
+  "adultOnly": false,
+  "buyingOptions": [
+    "FIXED_PRICE"
+  ],
+  "categoryId": "261044",
+  "categoryIdPath": "220|2536|261044",
+  "categoryPath": "Toys & Hobbies|Collectible Card Games|CCG Sealed Boxes",
+  "condition": "New/Factory Sealed",
+  "conditionId": "1000",
+  "description": "Overview\nThis is a brand new, unopened Pok\u00e9mon Card Game MEGA Dream ex BOX MEGA High-Class Pack. It comes with a shrink wrap. For more details, please check the official website.\n\nKey Features\n- MEGA\u30c9\u30ea\u30fc\u30e0ex BOX\n- MEGA \u30cf\u30a4\u30af\u30e9\u30b9\u30d1\u30c3\u30af\n- \u65b0\u54c1\u672a\u958b\u5c01\n- \u30b7\u30e5\u30ea\u30f3\u30af\u4ed8\u304d",
+  "eligibleForInlineCheckout": true,
+  "enabledForGuestCheckout": false,
+  "estimatedAvailabilities": [
+    {
+      "deliveryOptions": [
+        "SHIP_TO_HOME"
+      ],
+      "estimatedAvailabilityStatus": "OUT_OF_STOCK",
+      "estimatedAvailableQuantity": 0,
+      "estimatedRemainingQuantity": 0,
+      "estimatedSoldQuantity": 0
+    }
+  ],
+  "image": {
+    "imageUrl": "https://item-shopping.c.yimg.jp/i/l/evalue-omochayasan_4521329431932"
+  },
+  "immediatePay": true,
+  "itemCreationDate": "2026-08-24T07:26:30.000Z",
+  "itemEndDate": "2026-09-03T06:02:46.000Z",
+  "itemId": "v1|110590237507|0",
+  "itemLocation": {
+    "city": "Kamakura-shi",
+    "country": "JP",
+    "postalCode": "***-****"
+  },
+  "itemWebUrl": "https://sandbox.ebay.com/itm/Pokemon-Card-Game-MEGA-Dream-ex-BOX-/110590237507?src=urllib",
+  "legacyItemId": "110590237507",
+  "listingMarketplaceId": "EBAY_US",
+  "localizedAspects": [
+    {
+      "name": "Set",
+      "type": "STRING",
+      "value": "MEGA Dream ex BOX"
+    },
+    {
+      "name": "Game",
+      "type": "STRING",
+      "value": "Not Specified"
+    }
+  ],
+  "lotSize": 0,
+  "paymentMethods": [
+    {
+      "paymentMethodBrands": [
+        {
+          "paymentMethodBrandType": "PAYPAL"
+        },
+        {
+          "paymentMethodBrandType": "APPLE_PAY"
+        },
+        {
+          "paymentMethodBrandType": "GOOGLE_PAY"
+        }
+      ],
+      "paymentMethodType": "WALLET"
+    },
+    {
+      "paymentMethodBrands": [
+        {
+          "paymentMethodBrandType": "VISA"
+        },
+        {
+          "paymentMethodBrandType": "MASTERCARD"
+        },
+        {
+          "paymentMethodBrandType": "AMERICAN_EXPRESS"
+        },
+        {
+          "paymentMethodBrandType": "DISCOVER"
+        }
+      ],
+      "paymentMethodType": "CREDIT_CARD"
+    }
+  ],
+  "price": {
+    "currency": "USD",
+    "value": "232.90"
+  },
+  "priorityListing": false,
+  "returnTerms": {
+    "refundMethod": "MONEY_BACK",
+    "returnPeriod": {
+      "unit": "CALENDAR_DAY",
+      "value": 30
+    },
+    "returnShippingCostPayer": "BUYER",
+    "returnsAccepted": true
+  },
+  "seller": {
+    "feedbackPercentage": "0.0",
+    "feedbackScore": 500,
+    "username": "testuser_katoiek"
+  },
+  "sellerItemRevision": "1",
+  "shipToLocations": {
+    "regionExcluded": [
+      {
+        "regionId": "UA",
+        "regionName": "Ukraine",
+        "regionType": "COUNTRY"
+      },
+      {
+        "regionId": "RU",
+        "regionName": "Russian Federation",
+        "regionType": "COUNTRY"
+      }
+    ],
+    "regionIncluded": [
+      {
+        "regionId": "US",
+        "regionName": "United States",
+        "regionType": "COUNTRY"
+      }
+    ]
+  },
+  "shippingOptions": [
+    {
+      "additionalShippingCostPerUnit": {
+        "currency": "USD",
+        "value": "0.00"
+      },
+      "maxEstimatedDeliveryDate": "2026-10-25T10:00:00.000Z",
+      "minEstimatedDeliveryDate": "2026-10-15T10:00:00.000Z",
+      "quantityUsedForEstimate": 1,
+      "shippingCost": {
+        "currency": "USD",
+        "value": "0.00"
+      },
+      "shippingCostType": "FIXED",
+      "shippingServiceCode": "Economy Shipping from outside US",
+      "type": "Economy Shipping from outside"
+    }
+  ],
+  "taxes": [
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Alabama",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "AL"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Arizona",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "AZ"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Arkansas",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "AR"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "California",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "CA"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Colorado",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "CO"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Connecticut",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "CT"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "District of Columbia",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "DC"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Hawaii",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "HI"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Idaho",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "ID"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Illinois",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "IL"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Indiana",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "IN"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Iowa",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "IA"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Kentucky",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "KY"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Maine",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "ME"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Maryland",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "MD"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Massachusetts",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "MA"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Minnesota",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "MN"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Nebraska",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "NE"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Nevada",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "NV"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "New Jersey",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "NJ"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "New Mexico",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "NM"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "New York",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "NY"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "North Dakota",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "ND"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Ohio",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "OH"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Oklahoma",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "OK"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Pennsylvania",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "PA"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Rhode Island",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "RI"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "South Carolina",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "SC"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "South Dakota",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "SD"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Texas",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "TX"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Utah",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "UT"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Vermont",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "VT"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Virginia",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "VA"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Washington",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "WA"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "West Virginia",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "WV"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Wisconsin",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "WI"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Wyoming",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "WY"
+      },
+      "taxType": "STATE_SALES_TAX"
+    }
+  ],
+  "title": "Pokemon Card Game MEGA Dream ex BOX",
+  "topRatedBuyingExperience": false
+}

@@ -1,0 +1,699 @@
+{
+  "adultOnly": false,
+  "brand": "Apple",
+  "buyingOptions": [
+    "FIXED_PRICE"
+  ],
+  "categoryId": "9355",
+  "categoryIdPath": "15032|9355",
+  "categoryPath": "Cell Phones & Accessories|Cell Phones & Smartphones",
+  "color": "Pink",
+  "condition": "New",
+  "conditionId": "1000",
+  "description": "<h2>Women's Oversized Puffer Jacket</h2><p>Stay warm without sacrificing style. Our oversized puffer jacket wraps you in cloud-like comfort while keeping your look effortlessly chic.</p><ul>\n<li>Relaxed oversized fit \u2014 perfect for layering</li>\n<li>Premium quilted stitching in rich olive green</li>\n<li>Adjustable hood for extra warmth on cold days</li>\n<li>Deep zip pockets to keep your essentials secure</li>\n<li>Lightweight fill that packs down easily for travel</li>\n</ul><p>From morning coffee runs to weekend adventures \u2014 this jacket does it all.</p>",
+  "eligibleForInlineCheckout": true,
+  "enabledForGuestCheckout": false,
+  "estimatedAvailabilities": [
+    {
+      "availabilityThreshold": 10,
+      "availabilityThresholdType": "MORE_THAN",
+      "deliveryOptions": [
+        "SHIP_TO_HOME"
+      ],
+      "estimatedAvailabilityStatus": "IN_STOCK",
+      "estimatedRemainingQuantity": 100,
+      "estimatedSoldQuantity": 0
+    }
+  ],
+  "image": {
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0816/6709/6827/files/image_0bbaa642-994f-434f-95cf-d74ba0f4226d.png?v=1785394209"
+  },
+  "immediatePay": false,
+  "itemCreationDate": "2026-08-12T03:59:25.000Z",
+  "itemEndDate": "2026-08-26T06:15:46.000Z",
+  "itemId": "v1|110590185676|0",
+  "itemLocation": {
+    "city": "Seattle",
+    "country": "US",
+    "postalCode": "981**",
+    "stateOrProvince": "Washington"
+  },
+  "itemWebUrl": "https://sandbox.ebay.com/itm/Womens-Oversized-Puffer-Jacket-/110590185676?src=urllib",
+  "legacyItemId": "110590185676",
+  "listingMarketplaceId": "EBAY_US",
+  "localizedAspects": [
+    {
+      "name": "Brand",
+      "type": "STRING",
+      "value": "Apple"
+    },
+    {
+      "name": "Color",
+      "type": "STRING",
+      "value": "Pink"
+    },
+    {
+      "name": "Model",
+      "type": "STRING",
+      "value": "Apple iPhone 15"
+    },
+    {
+      "name": "Storage Capacity",
+      "type": "STRING",
+      "value": "1 TB"
+    }
+  ],
+  "lotSize": 0,
+  "paymentMethods": [
+    {
+      "paymentMethodBrands": [
+        {
+          "paymentMethodBrandType": "PAYPAL"
+        },
+        {
+          "paymentMethodBrandType": "APPLE_PAY"
+        },
+        {
+          "paymentMethodBrandType": "GOOGLE_PAY"
+        }
+      ],
+      "paymentMethodType": "WALLET"
+    },
+    {
+      "paymentMethodType": "CHECK"
+    },
+    {
+      "paymentMethodBrands": [
+        {
+          "paymentMethodBrandType": "VISA"
+        },
+        {
+          "paymentMethodBrandType": "MASTERCARD"
+        },
+        {
+          "paymentMethodBrandType": "AMERICAN_EXPRESS"
+        },
+        {
+          "paymentMethodBrandType": "DISCOVER"
+        }
+      ],
+      "paymentMethodType": "CREDIT_CARD"
+    }
+  ],
+  "price": {
+    "currency": "USD",
+    "value": "149.99"
+  },
+  "priorityListing": false,
+  "returnTerms": {
+    "refundMethod": "MONEY_BACK",
+    "returnPeriod": {
+      "unit": "CALENDAR_DAY",
+      "value": 30
+    },
+    "returnShippingCostPayer": "SELLER",
+    "returnsAccepted": true
+  },
+  "seller": {
+    "feedbackPercentage": "0.0",
+    "feedbackScore": 500,
+    "username": "testuser_shrestharikesh"
+  },
+  "sellerItemRevision": "4",
+  "shipToLocations": {
+    "regionExcluded": [
+      {
+        "regionId": "PF",
+        "regionName": "French Polynesia",
+        "regionType": "COUNTRY"
+      },
+      {
+        "regionId": "LY",
+        "regionName": "Libya",
+        "regionType": "COUNTRY"
+      },
+      {
+        "regionId": "NC",
+        "regionName": "New Caledonia",
+        "regionType": "COUNTRY"
+      },
+      {
+        "regionId": "GP",
+        "regionName": "Guadeloupe",
+        "regionType": "COUNTRY"
+      },
+      {
+        "regionId": "VE",
+        "regionName": "Venezuela",
+        "regionType": "COUNTRY"
+      },
+      {
+        "regionId": "RE",
+        "regionName": "Reunion",
+        "regionType": "COUNTRY"
+      },
+      {
+        "regionId": "BB",
+        "regionName": "Barbados",
+        "regionType": "COUNTRY"
+      },
+      {
+        "regionId": "MQ",
+        "regionName": "Martinique",
+        "regionType": "COUNTRY"
+      },
+      {
+        "regionId": "GF",
+        "regionName": "French Guiana",
+        "regionType": "COUNTRY"
+      },
+      {
+        "regionId": "UA",
+        "regionName": "Ukraine",
+        "regionType": "COUNTRY"
+      },
+      {
+        "regionId": "RU",
+        "regionName": "Russian Federation",
+        "regionType": "COUNTRY"
+      },
+      {
+        "regionId": "IL",
+        "regionName": "Israel",
+        "regionType": "COUNTRY"
+      }
+    ],
+    "regionIncluded": [
+      {
+        "regionId": "WORLDWIDE",
+        "regionName": "Worldwide",
+        "regionType": "WORLDWIDE"
+      }
+    ]
+  },
+  "shippingOptions": [
+    {
+      "additionalShippingCostPerUnit": {
+        "currency": "USD",
+        "value": "0.00"
+      },
+      "maxEstimatedDeliveryDate": "2026-09-19T10:00:00.000Z",
+      "minEstimatedDeliveryDate": "2026-09-15T10:00:00.000Z",
+      "quantityUsedForEstimate": 1,
+      "shippingCarrierCode": "USPS",
+      "shippingCost": {
+        "currency": "USD",
+        "value": "0.00"
+      },
+      "shippingCostType": "FIXED",
+      "shippingServiceCode": "USPS Priority Mail Medium Flat Rate Box",
+      "trademarkSymbol": "\u00ae",
+      "type": "Expedited Shipping"
+    }
+  ],
+  "taxes": [
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Alabama",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "AL"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Arizona",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "AZ"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Arkansas",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "AR"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "California",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "CA"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Colorado",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "CO"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Connecticut",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "CT"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "District of Columbia",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "DC"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Hawaii",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "HI"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Idaho",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "ID"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Illinois",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "IL"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Indiana",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "IN"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Iowa",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "IA"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Kentucky",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "KY"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Maine",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "ME"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Maryland",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "MD"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Massachusetts",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "MA"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Minnesota",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "MN"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Nebraska",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "NE"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Nevada",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "NV"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "New Jersey",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "NJ"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "New Mexico",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "NM"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "New York",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "NY"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "North Dakota",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "ND"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Ohio",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "OH"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Oklahoma",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "OK"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Pennsylvania",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "PA"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Rhode Island",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "RI"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "South Carolina",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "SC"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "South Dakota",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "SD"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Texas",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "TX"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Utah",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "UT"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Vermont",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "VT"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Virginia",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "VA"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Washington",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "WA"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "West Virginia",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "WV"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Wisconsin",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "WI"
+      },
+      "taxType": "STATE_SALES_TAX"
+    },
+    {
+      "ebayCollectAndRemitTax": true,
+      "includedInPrice": false,
+      "shippingAndHandlingTaxed": true,
+      "taxJurisdiction": {
+        "region": {
+          "regionName": "Wyoming",
+          "regionType": "STATE_OR_PROVINCE"
+        },
+        "taxJurisdictionId": "WY"
+      },
+      "taxType": "STATE_SALES_TAX"
+    }
+  ],
+  "title": "Women's Oversized Puffer Jacket",
+  "topRatedBuyingExperience": false
+}
