@@ -22,8 +22,11 @@ RETRY_POLICY = RetryPolicy(initial_interval=timedelta(seconds=2), backoff_coeffi
 
 @workflow.defn
 class EbayItemEnrichmentWorkflow:
+    """Workflow to fetch details for a list of items and save them individually to disk."""
+
     @workflow.run
     async def run(self, input_items_file: str, output_dir: str = "./ebay_items") -> dict:
+        """Executes the enrichment pipeline by reading item IDs, fetching details, and writing JSON files."""
         item_ids = await workflow.execute_activity(read_lines_from_file_activity, input_items_file, start_to_close_timeout=timedelta(seconds=10))
         if not item_ids:
             return {"status": "skipped", "reason": "No item IDs to process"}
@@ -37,8 +40,11 @@ class EbayItemEnrichmentWorkflow:
 
 @workflow.defn
 class EbayIngestionWorkflow:
+    """Workflow to batch fetch eBay items and save them in a highly structured YAML format."""
+
     @workflow.run
     async def run(self, config_file: str, input_items_file: str, output_file: str) -> dict:
+        """Executes the ingestion pipeline: reads config, fetches batches of items, normalizes records, and appends to YAML."""
         # 1. Read config
         config = await workflow.execute_activity(
             read_yaml_config_activity, config_file,

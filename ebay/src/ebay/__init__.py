@@ -1,1 +1,1 @@
-"""Temporal workflows for eBay search and item enrichment."""
+"""eBay ingestion pipeline package for Temporal workflows and activities."""

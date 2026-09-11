@@ -1,3 +1,5 @@
+"""Configuration parameters for the eBay Temporal pipeline."""
+
 import os
 from dotenv import load_dotenv
 

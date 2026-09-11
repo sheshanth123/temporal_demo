@@ -9,6 +9,7 @@ from ebay import activities, config, workflows
 
 
 async def _main() -> None:
+    """Connects to the Temporal server and registers the worker with workflows and activities."""
     client = await Client.connect(config.TEMPORAL_HOST)
     worker = Worker(
         client,
@@ -21,6 +22,7 @@ async def _main() -> None:
 
 
 def run_worker() -> None:
+    """Synchronous wrapper to start the Temporal worker daemon."""
     asyncio.run(_main())
 
 

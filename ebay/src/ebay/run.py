@@ -10,6 +10,7 @@ from ebay import config, workflows
 
 
 async def _main() -> None:
+    """Connects to the Temporal server and triggers the Enrichment and Ingestion workflows."""
     client = await Client.connect(config.TEMPORAL_HOST)
     root = Path.cwd()
     items_path = root / "item_ids.txt"
@@ -36,6 +37,7 @@ async def _main() -> None:
 
 
 def run_pipeline() -> None:
+    """Synchronous wrapper to run the async pipeline execution."""
     asyncio.run(_main())
 
 

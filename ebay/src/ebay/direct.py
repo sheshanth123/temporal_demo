@@ -4,6 +4,8 @@ Directly test authentication, search, and item detail retrieval
 without requiring Temporal server or worker processes.
 """
 
+"""CLI Tool to directly test eBay API calls for token generation, search, and fetching items."""
+
 import argparse
 import base64
 import json
