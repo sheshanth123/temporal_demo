@@ -14,13 +14,3 @@ dependencies = [
     "pyyaml>=6.0.3",
     "ulid-py>=1.1.0",
 ]
-
-[project.scripts]
-ebay-worker = "ebay.worker:run_worker"
-ebay-run = "ebay.run:run_pipeline"
-ebay-cli = "ebay.direct:main"
-
-
-[build-system]
-requires = ["uv_build>=0.12.10,<0.13.0"]
-build-backend = "uv_build"

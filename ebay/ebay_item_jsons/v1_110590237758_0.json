@@ -198,7 +198,7 @@
         "value": "0.00"
       },
       "maxEstimatedDeliveryDate": "2026-09-16T10:00:00.000Z",
-      "minEstimatedDeliveryDate": "2026-09-13T10:00:00.000Z",
+      "minEstimatedDeliveryDate": "2026-09-14T10:00:00.000Z",
       "quantityUsedForEstimate": 1,
       "shippingCarrierCode": "USPS",
       "shippingCost": {
