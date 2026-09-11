@@ -56,12 +56,12 @@ temporal server start-dev
 ### 4. Start the Worker Process
 In a separate terminal, launch the worker that listens for tasks:
 ```powershell
-uv run ebay-worker
+uv run workers/extractor/worker.py
 ```
 
 ### 5. Trigger the Pipeline
 In a third terminal, submit the workflows to the cluster:
 ```powershell
-uv run ebay-run
+uv run scripts/run.py
 ```
 This will automatically execute the workflows, ultimately generating your populated `ingestion_output.yaml` file.
