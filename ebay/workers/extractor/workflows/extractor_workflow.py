@@ -43,10 +43,33 @@ class EbayItemEnrichmentWorkflow:
             return {"status": "skipped", "reason": "No active item IDs to process"}
             
         token = await workflow.execute_activity(fetch_oauth_token_activity, start_to_close_timeout=timedelta(seconds=30), retry_policy=RETRY_POLICY)
+        
+        page_size = active_listings[0].get("page_size", 20) if active_listings else 20
         saved_paths = []
-        for item_id in item_ids:
-            data = await workflow.execute_activity(fetch_item_details_activity, {"token": token, "item_id": item_id}, start_to_close_timeout=timedelta(seconds=30), retry_policy=RETRY_POLICY)
-            saved_paths.append(await workflow.execute_activity(save_item_json_activity, {"item_id": item_id, "data": data, "output_dir": output_dir}, start_to_close_timeout=timedelta(seconds=10)))
+        
+        for i in range(0, len(item_ids), page_size):
+            chunk = item_ids[i:i + page_size]
+            batch_response = await workflow.execute_activity(
+                fetch_item_batch_activity,
+                {"token": token, "item_ids": chunk},
+                start_to_close_timeout=timedelta(seconds=30),
+                retry_policy=RETRY_POLICY
+            )
+            
+            items = batch_response.get("items", [])
+            if not items:
+                items = batch_response.get("itemSummaries", [])
+                
+            for item in items:
+                item_id = item.get("itemId")
+                if item_id:
+                    path = await workflow.execute_activity(
+                        save_item_json_activity, 
+                        {"item_id": item_id, "data": item, "output_dir": output_dir}, 
+                        start_to_close_timeout=timedelta(seconds=10)
+                    )
+                    saved_paths.append(path)
+                    
         return {"status": "completed", "items_processed": len(saved_paths), "output_dir": output_dir}
 
 
