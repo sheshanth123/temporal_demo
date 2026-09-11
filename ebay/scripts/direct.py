@@ -143,14 +143,14 @@ def main() -> None:
         print(f"Error: Queries file '{queries_file}' not found.")
         return
 
-    with open(args.queries_file, 'r', encoding='utf-8') as f:
+    with open(queries_file, 'r', encoding='utf-8') as f:
         queries = [line.strip() for line in f if line.strip()]
 
     if not queries:
         print("No queries found in file.")
         return
 
-    client = EbayApiClient(marketplace_id=args.marketplace)
+    client = EbayApiClient(marketplace_id=marketplace)
     print("Fetching OAuth Token...")
     client.get_token()
 
@@ -158,7 +158,7 @@ def main() -> None:
 
     for query in queries:
         print(f"Searching for: '{query}'...")
-        items = client.search_items(query, limit=args.limit)
+        items = client.search_items(query, limit=limit)
         if not items:
             print(f"  No items found for '{query}'.")
             continue
@@ -173,11 +173,11 @@ def main() -> None:
 
     print(f"\nTotal unique item IDs found: {len(all_item_ids)}")
     
-    with open(args.output_file, 'w', encoding='utf-8') as f:
+    with open(output_file, 'w', encoding='utf-8') as f:
         for item_id in all_item_ids:
             f.write(f"{item_id}\n")
             
-    print(f"Saved to {args.output_file}")
+    print(f"Saved to {output_file}")
 
 
 if __name__ == "__main__":
