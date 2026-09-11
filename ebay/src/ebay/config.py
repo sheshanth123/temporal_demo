@@ -3,13 +3,22 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+# eBay OAuth Credentials
 EBAY_CLIENT_ID = os.getenv("EBAY_CLIENT_ID")
 EBAY_CLIENT_SECRET = os.getenv("EBAY_CLIENT_SECRET")
+
+# eBay API Endpoint (defaults to Sandbox)
 EBAY_BASE_URL = os.getenv("EBAY_BASE_URL", "https://api.sandbox.ebay.com")
+
+# SSL Configuration (useful if behind a corporate proxy)
 EBAY_CA_BUNDLE = os.getenv("EBAY_CA_BUNDLE")
 EBAY_VERIFY_SSL = os.getenv("EBAY_VERIFY_SSL", "true").lower() not in {"0", "false", "no"}
+
+# Temporal Server Configuration
 TEMPORAL_UI_URL = os.getenv("TEMPORAL_UI_URL", "http://localhost:8233")
 TEMPORAL_HOST = os.getenv("TEMPORAL_HOST", "localhost:7233")
+
+# Temporal Task Queue Name (worker and workflows must match this)
 TASK_QUEUE = os.getenv("TASK_QUEUE", "ebay-processing-queue")
 
 # eBay Marketplace & Request Context Configuration
