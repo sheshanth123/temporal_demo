@@ -1,0 +1,40 @@
+listings:
+  - listing_id: "v1|110590237758|0"
+    listing_name: "Gaming Mouse 1"
+    source_platform: "ebay"
+    endpoint: "/buy/browse/v1/item"
+    priority: "high"
+    mode: "polling"
+    page_size: 20
+    schedule: "0 * * * *"
+    enable: true
+
+  - listing_id: "v1|110590547091|0"
+    listing_name: "Gaming Mouse 2"
+    source_platform: "ebay"
+    endpoint: "/buy/browse/v1/item"
+    priority: "medium"
+    mode: "polling"
+    page_size: 20
+    schedule: "0 12 * * *"
+    enable: true
+
+  - listing_id: "v1|110590445527|0"
+    listing_name: "Gaming Mouse 3"
+    source_platform: "ebay"
+    endpoint: "/buy/browse/v1/item"
+    priority: "low"
+    mode: "polling"
+    page_size: 20
+    schedule: "0 0 * * *"
+    enable: true
+
+  - listing_id: "v1|999999999999|0"
+    listing_name: "Disabled Item"
+    source_platform: "ebay"
+    endpoint: "/buy/browse/v1/item"
+    priority: "low"
+    mode: "polling"
+    page_size: 20
+    schedule: "0 0 * * *"
+    enable: false

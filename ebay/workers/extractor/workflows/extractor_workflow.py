@@ -25,11 +25,23 @@ class EbayItemEnrichmentWorkflow:
     """Workflow to fetch details for a list of items and save them individually to disk."""
 
     @workflow.run
-    async def run(self, input_items_file: str, output_dir: str = "./ebay_items") -> dict:
-        """Executes the enrichment pipeline by reading item IDs, fetching details, and writing JSON files."""
-        item_ids = await workflow.execute_activity(read_lines_from_file_activity, input_items_file, start_to_close_timeout=timedelta(seconds=10))
+    async def run(self, pipeline_config_file: str, output_dir: str = "./ebay_items") -> dict:
+        """Executes the enrichment pipeline by reading item IDs from pipeline config, fetching details, and writing JSON files."""
+        config_data = await workflow.execute_activity(
+            read_yaml_config_activity, pipeline_config_file,
+            start_to_close_timeout=timedelta(seconds=10)
+        )
+        
+        listings = config_data.get("listings", [])
+        active_listings = [
+            lst for lst in listings 
+            if lst.get("enable") is True and str(lst.get("source_platform")).lower() == "ebay"
+        ]
+        item_ids = [lst.get("listing_id") for lst in active_listings if lst.get("listing_id")]
+
         if not item_ids:
-            return {"status": "skipped", "reason": "No item IDs to process"}
+            return {"status": "skipped", "reason": "No active item IDs to process"}
+            
         token = await workflow.execute_activity(fetch_oauth_token_activity, start_to_close_timeout=timedelta(seconds=30), retry_policy=RETRY_POLICY)
         saved_paths = []
         for item_id in item_ids:
@@ -43,29 +55,35 @@ class EbayIngestionWorkflow:
     """Workflow to batch fetch eBay items and save them in a highly structured YAML format."""
 
     @workflow.run
-    async def run(self, config_file: str, input_items_file: str, output_file: str) -> dict:
+    async def run(self, pipeline_config_file: str, output_file: str) -> dict:
         """Executes the ingestion pipeline: reads config, fetches batches of items, normalizes records, and appends to YAML."""
-        # 1. Read config
-        config = await workflow.execute_activity(
-            read_yaml_config_activity, config_file,
+        # 1. Read Pipeline Config
+        config_data = await workflow.execute_activity(
+            read_yaml_config_activity, pipeline_config_file,
             start_to_close_timeout=timedelta(seconds=10)
         )
 
-        if not config.get("enable_flag", True):
-            return {"status": "skipped", "reason": "Pipeline is disabled in config."}
+        listings = config_data.get("listings", [])
+        
+        # 2. Filter Active Listings
+        active_ebay_listings = [
+            lst for lst in listings 
+            if lst.get("enable") is True and str(lst.get("source_platform")).lower() == "ebay"
+        ]
 
-        # 2. Read Item IDs
-        item_ids = await workflow.execute_activity(
-            read_lines_from_file_activity, input_items_file,
-            start_to_close_timeout=timedelta(seconds=10)
-        )
+        if not active_ebay_listings:
+            return {"status": "skipped", "reason": "No active eBay listings found in config."}
 
-        if not item_ids:
-            return {"status": "skipped", "reason": "No item IDs to process."}
+        # Build map for easy lookup by ID
+        listing_map = {lst["listing_id"]: lst for lst in active_ebay_listings if "listing_id" in lst}
+        item_ids = list(listing_map.keys())
 
         # 3. Setup Context
         fetch_run_id = str(ulid.new())
         batch_start_time = workflow.now().isoformat()
+        
+        # We will use the page_size from the first listing as our batching size, default to 20
+        page_size = active_ebay_listings[0].get("page_size", 20)
 
         # 4. Fetch OAuth Token
         token = await workflow.execute_activity(
@@ -75,7 +93,6 @@ class EbayIngestionWorkflow:
         )
 
         # 5. Chunking & Fetching
-        page_size = config.get("page_size", 20)
         total_saved = 0
 
         for i in range(0, len(item_ids), page_size):
@@ -91,7 +108,6 @@ class EbayIngestionWorkflow:
             )
 
             items = batch_response.get("items", [])
-            # Fallback
             if not items:
                 items = batch_response.get("itemSummaries", [])
             if not items:
@@ -100,14 +116,19 @@ class EbayIngestionWorkflow:
             # Prepare records matching schema
             records_to_save = []
             for item in items:
+                fetched_item_id = item.get("itemId")
+                # Look up the original listing config for this item
+                item_config = listing_map.get(fetched_item_id, {})
+                
                 record = {
                     "RECORD_ID": str(ulid.new()),
                     "CALL_ID": call_id,
                     "FETCH_RUN_ID": fetch_run_id,
                     "BATCH_START_TIME": batch_start_time,
-                    "SOURCE_PLATFORM": config.get("source_platform", "EBAY"),
-                    "LIST_ID": config.get("listing_id", "UNKNOWN"),
-                    "MODE": config.get("mode", "POLL"),
+                    "SOURCE_PLATFORM": str(item_config.get("source_platform", "EBAY")).upper(),
+                    "LIST_ID": item_config.get("listing_id", fetched_item_id),
+                    "LIST_NAME": item_config.get("listing_name", "UNKNOWN"),
+                    "MODE": str(item_config.get("mode", "POLLING")).upper(),
                     "PAYLOAD": item
                 }
                 records_to_save.append(record)
