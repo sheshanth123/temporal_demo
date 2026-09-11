@@ -133,117 +133,51 @@ class EbayApiClient:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(
-        description="Single CLI tool to test eBay OAuth token, Search items, and Get item details."
-    )
-    subparsers = parser.add_subparsers(dest="command", help="Command to run")
+    queries_file = "search_queries.txt"
+    output_file = "item_ids.txt"
+    marketplace = None
+    limit = 3
 
-    # Command: token
-    subparsers.add_parser("token", help="Fetch and display OAuth 2.0 access token")
-
-    # Command: search
-    search_parser = subparsers.add_parser("search", help="Search items by query")
-    search_parser.add_argument("query", type=str, help="Search query (e.g. 'gaming mouse')")
-    search_parser.add_argument("--limit", "-l", type=int, default=3, help="Max items to retrieve")
-    search_parser.add_argument("--marketplace", "-m", type=str, default=None, help="Marketplace ID (e.g. EBAY_US)")
-    search_parser.add_argument("--raw", action="store_true", help="Print raw API response JSON")
-
-    # Command: get
-    get_parser = subparsers.add_parser("get", help="Get item details by Item ID")
-    get_parser.add_argument("item_id", type=str, help="eBay item ID (e.g. 'v1|110590237758|0')")
-    get_parser.add_argument("--marketplace", "-m", type=str, default=None, help="Marketplace ID (e.g. EBAY_US)")
-
-    # Command: test (Runs token, search, and get in one shot)
-    test_parser = subparsers.add_parser("test", help="Test token, search query, and fetch first item in one shot")
-    test_parser.add_argument("--query", "-q", type=str, default="gaming mouse", help="Test query")
-    test_parser.add_argument("--marketplace", "-m", type=str, default=None, help="Marketplace ID")
-
-    # Command: marketplaces
-    subparsers.add_parser("marketplaces", help="List supported eBay marketplaces")
-
-    args = parser.parse_args()
-
-    if not args.command:
-        # Default behavior when no arguments are passed: run the complete test
-        args.command = "test"
-        args.query = "gaming mouse"
-        args.marketplace = None
-
-    if args.command == "marketplaces":
-        print("\nSupported eBay Marketplaces:")
-        for code, info in SUPPORTED_MARKETPLACES.items():
-            print(f"  - {code:<16}: {info['name']} (locale: {info['default_locale']})")
+    import os
+    if not os.path.exists(queries_file):
+        print(f"Error: Queries file '{queries_file}' not found.")
         return
 
-    client = EbayApiClient(marketplace_id=getattr(args, "marketplace", None))
+    with open(args.queries_file, 'r', encoding='utf-8') as f:
+        queries = [line.strip() for line in f if line.strip()]
 
-    if args.command == "token":
-        print("\n--- Requesting OAuth Token ---")
-        token = client.get_token()
-        print(f"Token: {token}\n")
+    if not queries:
+        print("No queries found in file.")
+        return
 
-    elif args.command == "search":
-        print(f"\n--- Searching for '{args.query}' on {args.marketplace or client.marketplace_id} ---")
-        result = client.search_items(args.query, limit=args.limit, raw=args.raw)
-        if args.raw:
-            print(json.dumps(result, indent=2))
-        else:
-            items = result if isinstance(result, list) else []
-            print(f"Found {len(items)} items:\n")
-            for idx, item in enumerate(items, start=1):
-                item_id = item.get("itemId")
-                title = item.get("title")
-                price = item.get("price", {}).get("value")
-                currency = item.get("price", {}).get("currency")
-                print(f"[{idx}] {title}")
-                print(f"    Item ID: {item_id}")
-                print(f"    Price:   {price} {currency}")
-                print(f"    URL:     {item.get('itemWebUrl')}\n")
+    client = EbayApiClient(marketplace_id=args.marketplace)
+    print("Fetching OAuth Token...")
+    client.get_token()
 
-    elif args.command == "get":
-        print(f"\n--- Fetching Item Details for '{args.item_id}' on {args.marketplace or client.marketplace_id} ---")
-        details = client.get_item(args.item_id)
-        print(f"Title:     {details.get('title')}")
-        print(f"Condition: {details.get('condition')}")
-        price = details.get("price", {})
-        print(f"Price:     {price.get('value')} {price.get('currency')}")
-        print(f"Category:  {details.get('categoryPath')}")
-        print(f"Item URL:  {details.get('itemWebUrl')}")
-        print("\nRaw JSON preview (first 5 keys):")
-        preview = {k: details[k] for k in list(details.keys())[:5]}
-        print(json.dumps(preview, indent=2))
+    all_item_ids = []
 
-    elif args.command == "test":
-        print(f"==================================================")
-        print(f"eBay Direct API Test (Marketplace: {client.marketplace_id})")
-        print(f"Base URL: {client.base_url}")
-        print(f"==================================================")
-
-        print("\n[Step 1] Fetching OAuth Token...")
-        token = client.get_token()
-        print(f"  ✓ Success! Token starts with: {token[:20]}...")
-
-        print(f"\n[Step 2] Searching for: '{args.query}' (limit 2)...")
-        items = client.search_items(args.query, limit=2)
+    for query in queries:
+        print(f"Searching for: '{query}'...")
+        items = client.search_items(query, limit=args.limit)
         if not items:
-            print("  ! No items found for query.")
-            return
+            print(f"  No items found for '{query}'.")
+            continue
+        
+        count = 0
+        for item in items:
+            item_id = item.get("itemId")
+            if item_id and item_id not in all_item_ids:
+                all_item_ids.append(item_id)
+                count += 1
+        print(f"  Found {count} new unique items.")
 
-        print(f"  ✓ Success! Found {len(items)} items.")
-        first_item = items[0]
-        item_id = first_item.get("itemId")
-        print(f"  - Title:   {first_item.get('title')}")
-        print(f"  - Item ID: {item_id}")
-        print(f"  - Price:   {first_item.get('price', {}).get('value')} {first_item.get('price', {}).get('currency')}")
-
-        if item_id:
-            print(f"\n[Step 3] Fetching full details for item '{item_id}'...")
-            details = client.get_item(item_id)
-            print(f"  ✓ Success! Item Details retrieved:")
-            print(f"    - Title:       {details.get('title')}")
-            print(f"    - Condition:   {details.get('condition')}")
-            print(f"    - Seller:      {details.get('seller', {}).get('username')}")
-            print(f"    - URL:         {details.get('itemWebUrl')}")
+    print(f"\nTotal unique item IDs found: {len(all_item_ids)}")
+    
+    with open(args.output_file, 'w', encoding='utf-8') as f:
+        for item_id in all_item_ids:
+            f.write(f"{item_id}\n")
+            
+    print(f"Saved to {args.output_file}")
 
 
 if __name__ == "__main__":
