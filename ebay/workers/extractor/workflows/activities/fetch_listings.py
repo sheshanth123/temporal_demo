@@ -10,7 +10,7 @@ import httpx
 from temporalio import activity
 import yaml
 
-from ebay.config import (
+from config import (
     EBAY_ACCEPT_LANGUAGE,
     EBAY_BASE_URL,
     EBAY_CA_BUNDLE,

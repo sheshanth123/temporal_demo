@@ -6,7 +6,7 @@ from temporalio import workflow
 from temporalio.common import RetryPolicy
 
 with workflow.unsafe.imports_passed_through():
-    from ebay.activities import (
+    from .activities.fetch_listings import (
         fetch_item_details_activity, 
         fetch_oauth_token_activity, 
         read_lines_from_file_activity, 

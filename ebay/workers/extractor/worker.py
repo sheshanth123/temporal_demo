@@ -5,7 +5,9 @@ import asyncio
 from temporalio.client import Client
 from temporalio.worker import Worker
 
-from ebay import activities, config, workflows
+import config
+from workflows import extractor_workflow
+from workflows.activities import fetch_listings
 
 
 async def _main() -> None:
@@ -14,8 +16,8 @@ async def _main() -> None:
     worker = Worker(
         client,
         task_queue=config.TASK_QUEUE,
-        workflows=[workflows.EbayItemEnrichmentWorkflow, workflows.EbayIngestionWorkflow],
-        activities=activities.ALL_ACTIVITIES,
+        workflows=[extractor_workflow.EbayItemEnrichmentWorkflow, extractor_workflow.EbayIngestionWorkflow],
+        activities=fetch_listings.ALL_ACTIVITIES,
     )
     print(f"Worker listening on task queue: {config.TASK_QUEUE}")
     await worker.run()

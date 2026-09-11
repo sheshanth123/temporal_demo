@@ -14,7 +14,9 @@ from typing import Any
 
 import httpx
 
-from ebay.config import (
+import sys, os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'workers', 'extractor')))
+from config import (
     EBAY_ACCEPT_LANGUAGE,
     EBAY_BASE_URL,
     EBAY_CA_BUNDLE,

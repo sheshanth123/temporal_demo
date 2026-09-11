@@ -6,7 +6,10 @@ from pathlib import Path
 
 from temporalio.client import Client
 
-from ebay import config, workflows
+import sys, os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'workers', 'extractor')))
+import config
+from workflows import extractor_workflow
 
 
 async def _main() -> None:
@@ -19,7 +22,7 @@ async def _main() -> None:
 
     print("\n--- Triggering Workflow 2: Enrichment ---")
     enrich_result = await client.execute_workflow(
-        workflows.EbayItemEnrichmentWorkflow.run,
+        extractor_workflow.EbayItemEnrichmentWorkflow.run,
         args=[str(items_path), str(root / "ebay_item_jsons")],
         id=f"ebay-enrich-run-{run_id_suffix}",
         task_queue=config.TASK_QUEUE,
@@ -28,7 +31,7 @@ async def _main() -> None:
 
     print("\n--- Triggering Workflow 3: Data Ingestion ---")
     ingest_result = await client.execute_workflow(
-        workflows.EbayIngestionWorkflow.run,
+        extractor_workflow.EbayIngestionWorkflow.run,
         args=[str(root / "config.yaml"), str(items_path), str(root / "ingestion_output.yaml")],
         id=f"ebay-ingest-run-{run_id_suffix}",
         task_queue=config.TASK_QUEUE,
