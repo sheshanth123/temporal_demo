@@ -17,6 +17,7 @@ async def _main() -> None:
     client = await Client.connect(config.TEMPORAL_HOST)
     root = Path.cwd()
     items_path = root / "item_ids.txt"
+    pipeline_config = root / "pipeline_config.yaml"
 
     run_id_suffix = int(time.time())
 
@@ -24,6 +25,7 @@ async def _main() -> None:
     enrich_result = await client.execute_workflow(
         extractor_workflow.EbayItemEnrichmentWorkflow.run,
         args=[str(items_path), str(root / "ebay_item_jsons")],
+        args=[str(pipeline_config), str(root / "ebay_item_jsons")],
         id=f"ebay-enrich-run-{run_id_suffix}",
         task_queue=config.TASK_QUEUE,
     )
@@ -33,6 +35,7 @@ async def _main() -> None:
     ingest_result = await client.execute_workflow(
         extractor_workflow.EbayIngestionWorkflow.run,
         args=[str(root / "config.yaml"), str(items_path), str(root / "ingestion_output.yaml")],
+        args=[str(pipeline_config), str(root / "ingestion_output.yaml")],
         id=f"ebay-ingest-run-{run_id_suffix}",
         task_queue=config.TASK_QUEUE,
     )
