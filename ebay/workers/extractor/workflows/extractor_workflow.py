@@ -37,6 +37,7 @@ class EbayItemEnrichmentWorkflow:
             lst for lst in listings 
             if lst.get("enable") is True and str(lst.get("source_platform")).lower() == "ebay"
         ]
+        item_ids = [lst.get("listing_id") for lst in active_listings if lst.get("listing_id")]
         item_ids = [lst.get("Item_id", lst.get("listing_id")) for lst in active_listings if lst.get("Item_id", lst.get("listing_id"))]
 
         if not item_ids:
@@ -98,6 +99,7 @@ class EbayIngestionWorkflow:
             return {"status": "skipped", "reason": "No active eBay listings found in config."}
 
         # Build map for easy lookup by ID
+        listing_map = {lst["listing_id"]: lst for lst in active_ebay_listings if "listing_id" in lst}
         listing_map = {lst.get("Item_id", lst.get("listing_id")): lst for lst in active_ebay_listings if lst.get("Item_id", lst.get("listing_id"))}
         item_ids = list(listing_map.keys())
 

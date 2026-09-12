@@ -1,0 +1,273 @@
+records:
+  - source_platform_list_id: "EBAY|SYNTHETIC_E-GOLD"
+    record_id: "01M25MKHD3SC5TG70ZEJDMCQ9E"
+    call_id: "01M25MKFTMP4A7FF1H3V5KDYB4"
+    fetch_run_id: "01M25MKEPPEYN2AYPW7VH45Y8D"
+    batch_start_time: "2026-09-10T12:27:40.115906+00:00"
+    mode: "POLL"
+    payload:
+      additionalImages:
+        - imageUrl: https://test.ebuyl.com/api/v1/files/products/2026/08/15/9ee7c978838379fef6c6394361471a87.jpg
+      adultOnly: false
+      brand: OGHKO
+      buyingOptions:
+        - FIXED_PRICE
+      categoryId: "47779"
+      categoryIdPath: "58058|3676|47779"
+      categoryPath: "Computers/Tablets & Networking|Keyboards, Mice & Pointers|Keyboard & Mouse Bundles"
+      color: Black
+      condition: New
+      conditionId: "1000"
+      description: '<h1>Wired RGB Gaming Mouse 7D, USB Interface, Ergonomic Right-Handed Design for Desktop & Laptop</h1>...'
+      eligibleForInlineCheckout: true
+      enabledForGuestCheckout: true
+      estimatedAvailabilities:
+        - availabilityThreshold: 10
+          availabilityThresholdType: MORE_THAN
+          deliveryOptions:
+            - SHIP_TO_HOME
+          estimatedAvailabilityStatus: IN_STOCK
+          estimatedRemainingQuantity: 100
+          estimatedSoldQuantity: 0
+      image:
+        imageUrl: https://test.ebuyl.com/api/v1/files/products/2026/08/15/ad220ffe6c7e30c35311710387e5b324.jpg
+      immediatePay: false
+      itemCreationDate: "2026-08-24T08:53:04.000Z"
+      itemId: "v1|110590237758|0"
+      itemLocation:
+        city: San Jose
+        country: US
+        postalCode: "951**"
+        stateOrProvince: California
+      itemWebUrl: https://sandbox.ebay.com/itm/Wired-RGB-Gaming-Mouse-7D-USB-Ergonomic-Right-Hand-Design-Universal-for-Deskt-/110590237758?src=urllib
+      legacyItemId: "110590237758"
+      listingMarketplaceId: EBAY_US
+      localizedAspects:
+        - name: Brand
+          type: STRING
+          value: OGHKO
+        - name: Color
+          type: STRING
+          value: Black
+        - name: DPI精准度
+          type: STRING
+          value: "1600"
+        - name: Type
+          type: STRING
+          value: 有线
+      lotSize: 0
+      paymentMethods:
+        - paymentMethodBrands:
+            - paymentMethodBrandType: PAYPAL
+            - paymentMethodBrandType: APPLE_PAY
+            - paymentMethodBrandType: GOOGLE_PAY
+          paymentMethodType: WALLET
+        - paymentMethodBrands:
+            - paymentMethodBrandType: VISA
+            - paymentMethodBrandType: MASTERCARD
+            - paymentMethodBrandType: AMERICAN_EXPRESS
+            - paymentMethodBrandType: DISCOVER
+          paymentMethodType: CREDIT_CARD
+      price:
+        currency: USD
+        value: "20.00"
+      priorityListing: false
+      returnTerms:
+        refundMethod: MONEY_BACK
+        returnPeriod:
+          unit: CALENDAR_DAY
+          value: 30
+        returnShippingCostPayer: SELLER
+        returnsAccepted: true
+      seller:
+        feedbackPercentage: "0.0"
+        feedbackScore: 1000
+        username: testuser_charmy
+      title: "Wired RGB Gaming Mouse, 7D USB, Ergonomic Right-Hand Design, Universal for Deskt"
+
+  - source_platform_list_id: "EBAY|SYNTHETIC_E-GOLD"
+    record_id: "01M25MKHD3C2ZE878JVKXEWYTM"
+    call_id: "01M25MKFTMP4A7FF1H3V5KDYB4"
+    fetch_run_id: "01M25MKEPPEYN2AYPW7VH45Y8D"
+    batch_start_time: "2026-09-10T12:27:40.115906+00:00"
+    mode: "POLL"
+    payload:
+      adultOnly: false
+      buyingOptions:
+        - FIXED_PRICE
+      categoryId: "9355"
+      categoryIdPath: "15032|9355"
+      categoryPath: "Cell Phones & Accessories|Cell Phones & Smartphones"
+      condition: New
+      conditionId: "1000"
+      description: "High-performance wired gaming mouse with ergonomic design and customizable RGB lighting."
+      eligibleForInlineCheckout: true
+      enabledForGuestCheckout: true
+      estimatedAvailabilities:
+        - deliveryOptions:
+            - SHIP_TO_HOME
+          estimatedAvailabilityStatus: IN_STOCK
+          estimatedAvailableQuantity: 1
+          estimatedRemainingQuantity: 1
+          estimatedSoldQuantity: 0
+      image:
+        height: 1200
+        imageUrl: https://i.ebayimg.sandbox.ebay.com/images/g/I98AAeSwFUpqnDI4/s-l1600.jpg
+        width: 1600
+      immediatePay: true
+      itemCreationDate: "2026-09-05T15:16:26.000Z"
+      itemId: "v1|110590547091|0"
+      itemLocation:
+        city: Huntley
+        country: US
+        postalCode: "601**"
+        stateOrProvince: Illinois
+      itemWebUrl: https://sandbox.ebay.com/itm/Razer-Gaming-Mouse-/110590547091?src=urllib
+      legacyItemId: "110590547091"
+      listingMarketplaceId: EBAY_US
+      price:
+        currency: USD
+        value: "40.00"
+      title: "Razer Gaming Mouse"
+
+  - source_platform_list_id: "EBAY|SYNTHETIC_E-GOLD"
+    record_id: "01M25MKHD3DF5RGHK53KPXVV43"
+    call_id: "01M25MKFTMP4A7FF1H3V5KDYB4"
+    fetch_run_id: "01M25MKEPPEYN2AYPW7VH45Y8D"
+    batch_start_time: "2026-09-10T12:27:40.115906+00:00"
+    mode: "POLL"
+    payload:
+      adultOnly: false
+      brand: TIGERWINGS
+      buyingOptions:
+        - FIXED_PRICE
+      categoryId: "23895"
+      categoryIdPath: "58058|31530|23895"
+      categoryPath: "Computers/Tablets & Networking|Laptop & Desktop Accessories|Mouse Pads & Wrist Rests"
+      color: Black
+      condition: New
+      conditionId: "1000"
+      description: "<h1>Non-slip Wear-resistant Mouse Pad, Universal for Office & Gaming, Precision Pad</h1>..."
+      eligibleForInlineCheckout: true
+      enabledForGuestCheckout: true
+      estimatedAvailabilities:
+        - availabilityThreshold: 10
+          availabilityThresholdType: MORE_THAN
+          deliveryOptions:
+            - SHIP_TO_HOME
+          estimatedAvailabilityStatus: IN_STOCK
+          estimatedRemainingQuantity: 200
+          estimatedSoldQuantity: 0
+      image:
+        imageUrl: https://test.ebuyl.com/api/v1/files/products/2026/08/14/c52eeb8d71135321b45cd67ced49358e.jpg
+      immediatePay: false
+      itemCreationDate: "2026-08-31T06:56:26.000Z"
+      itemId: "v1|110590445527|0"
+      itemLocation:
+        city: San Jose
+        country: US
+        postalCode: "951**"
+        stateOrProvince: California
+      itemWebUrl: https://sandbox.ebay.com/itm/Non-slip-Wear-resistant-Mouse-Pad-Universal-for-Office-Gaming-Precision-Pad-/110590445527?src=urllib
+      legacyItemId: "110590445527"
+      listingMarketplaceId: EBAY_US
+      localizedAspects:
+        - name: Brand
+          type: STRING
+          value: TIGERWINGS
+        - name: Color
+          type: STRING
+          value: Black
+        - name: Material
+          type: STRING
+          value: 橡胶
+        - name: Type
+          type: STRING
+          value: Mouse Mat
+      price:
+        currency: USD
+        value: "20.00"
+      title: "Non-slip Wear-resistant Mouse Pad, Universal for Office & Gaming, Precision Pad,"
+
+  - source_platform_list_id: "EBAY|v1|110590237758|0"
+    record_id: "01M27R3XRQVDSEK82FDAE6SVQ5"
+    call_id: "01M27R3WFG0X6TTA7NGVBEXBSG"
+    fetch_run_id: "01M27R3VT2T0V2RVY5KEQ0XCJG"
+    batch_start_time: "2026-09-11T08:07:32.416291+00:00"
+    mode: "POLLING"
+    payload:
+      adultOnly: false
+      brand: OGHKO
+      buyingOptions:
+        - FIXED_PRICE
+      categoryId: "47779"
+      condition: New
+      itemId: "v1|110590237758|0"
+      legacyItemId: "110590237758"
+      price:
+        currency: USD
+        value: "20.00"
+      title: "Wired RGB Gaming Mouse, 7D USB, Ergonomic Right-Hand Design, Universal for Deskt"
+
+  - source_platform_list_id: "EBAY|1"
+    record_id: "01M286ZE599W1H28FV5HFX0B2G"
+    call_id: "01M286ZC9S9SWY9QYGNA1RQ0WA"
+    fetch_run_id: "01M286ZBGPCCSY6SBMRQEV4M7T"
+    batch_start_time: "2026-09-11T12:27:13.294102+00:00"
+    mode: "POLLING"
+    payload:
+      adultOnly: false
+      buyingOptions:
+        - FIXED_PRICE
+      categoryId: "261044"
+      condition: New/Factory Sealed
+      conditionId: "1000"
+      itemId: "v1|110590237507|0"
+      legacyItemId: "110590237507"
+      price:
+        currency: USD
+        value: "232.90"
+      title: "Pokemon Card Game MEGA Dream ex BOX"
+
+  - source_platform_list_id: "EBAY|2"
+    record_id: "01M286ZE59RVZEYYRC4QMS2QEN"
+    call_id: "01M286ZC9S9SWY9QYGNA1RQ0WA"
+    fetch_run_id: "01M286ZBGPCCSY6SBMRQEV4M7T"
+    batch_start_time: "2026-09-11T12:27:13.294102+00:00"
+    mode: "POLLING"
+    payload:
+      adultOnly: false
+      brand: WinWinX
+      buyingOptions:
+        - FIXED_PRICE
+      categoryId: "9355"
+      condition: New
+      conditionId: "1000"
+      itemId: "v1|110590625226|0"
+      legacyItemId: "110590625226"
+      price:
+        currency: USD
+        value: "249.99"
+      title: "Unlocked 5G Smartphone 128GB Dual SIM - WWX-PHONE-543780"
+
+  - source_platform_list_id: "EBAY|6"
+    record_id: "01M286ZE591545EMRCPA4SZGR5"
+    call_id: "01M286ZC9S9SWY9QYGNA1RQ0WA"
+    fetch_run_id: "01M286ZBGPCCSY6SBMRQEV4M7T"
+    batch_start_time: "2026-09-11T12:27:13.294102+00:00"
+    mode: "POLLING"
+    payload:
+      adultOnly: false
+      brand: Apple
+      buyingOptions:
+        - FIXED_PRICE
+      categoryId: "9355"
+      color: Pink
+      condition: New
+      conditionId: "1000"
+      itemId: "v1|110590185657|410111411816"
+      legacyItemId: "110590185657"
+      price:
+        currency: USD
+        value: "799.99"
+      title: "iPhone 15 (Pink)"

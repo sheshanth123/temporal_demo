@@ -1,0 +1,9 @@
+winget install Amazon.AWSCLI
+
+Test-Path "C:\Program Files\Amazon\AWSCLIV2\aws.exe"
+
+$env:Path += ";C:\Program Files\Amazon\AWSCLIV2"
+
+aws configure
+
+aws sts get-caller-identity

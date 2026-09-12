@@ -1,0 +1,33 @@
+# DynamoDB Table Item Schema: record-level
+# Primary Key:
+#   PK (hash_key):  source_platform_list_id  (String) -> "{SOURCE_PLATFORM}|{LIST_ID}"
+#   SK (range_key): record_id                (String) -> ULID
+# GSIs:
+#   gsi-fetch-run:  fetch_run_id (Hash), record_id (Range)
+#   gsi-call:       call_id (Hash), record_id (Range)
+#   gsi-batch-mode: batch_start_time (Hash), mode (Range)
+
+records:
+  - source_platform_list_id: "${SOURCE_PLATFORM}|${LIST_ID}"
+    record_id: "${RECORD_ID}"
+    call_id: "${CALL_ID}"
+    fetch_run_id: "${FETCH_RUN_ID}"
+    batch_start_time: "${BATCH_START_TIME}"
+    mode: "${MODE}"
+    payload:
+      # Raw data map/JSON from the source platform
+      itemId: "${PAYLOAD.itemId}"
+      title: "${PAYLOAD.title}"
+      price:
+        currency: "${PAYLOAD.price.currency}"
+        value: "${PAYLOAD.price.value}"
+      condition: "${PAYLOAD.condition}"
+      conditionId: "${PAYLOAD.conditionId}"
+      buyingOptions:
+        - "${PAYLOAD.buyingOptions[0]}"
+      estimatedAvailabilities:
+        - estimatedAvailabilityStatus: "${PAYLOAD.estimatedAvailabilities[0].estimatedAvailabilityStatus}"
+          estimatedRemainingQuantity: ${PAYLOAD.estimatedAvailabilities[0].estimatedRemainingQuantity}
+      seller:
+        username: "${PAYLOAD.seller.username}"
+        feedbackScore: ${PAYLOAD.seller.feedbackScore}

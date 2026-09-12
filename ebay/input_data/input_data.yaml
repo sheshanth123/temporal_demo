@@ -136,6 +136,7 @@ listings:
 
   - listing_id: 16
     listing_name: "Item"
+    Item_id: v1|110590243031|0"
     Item_id: "v1|110590243031|0"
     source_platform: "ebay"
     endpoint: "/buy/browse/v1/item"
